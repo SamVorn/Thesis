@@ -15,6 +15,17 @@
       "question_id": "q3",
       "question_text": "How was your experience?",
       "answer": "It was excellent!"
+    },
+    {
+      "question_id": "q4",
+      "question_text": "What is your email address?",
+      "answer": "samuelvorn@gmail.com"
+
+    },
+    {
+      "question_id": "q5",
+      "question_text": "What is your phone number?",
+      "answer": "555-123-4567"
     }
   ]
 }
