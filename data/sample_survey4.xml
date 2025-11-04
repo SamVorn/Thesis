@@ -1,0 +1,22 @@
+<survey id="ABC123">
+  <response>
+    <question_id>1</question_id>
+    <question_text>What is your full name?</question_text>
+    <answer>Alice Johnson</answer>
+  </response>
+  <response>
+    <question_id>2</question_id>
+    <question_text>What is your home address?</question_text>
+    <answer>123 Main St, Springfield</answer>
+  </response>
+  <response>
+    <question_id>3</question_id>
+    <question_text>What is your date of birth?</question_text>
+    <answer>05/16/1992</answer>
+  </response>
+  <response>
+    <question_id>4</question_id>
+    <question_text>Do you have any medical conditions?</question_text>
+    <answer>Asthma</answer>
+  </response>
+</survey>

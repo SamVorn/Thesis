@@ -11,19 +11,24 @@ def run_pipeline(survey_path: str, rules_path: str):
     patterns = load_rules(rules_path)
 
     results = []
-    for response in survey["responses"]:
-        q_text = response["question_text"]
-        answer = response["answer"]
+
+    for i, response in enumerate(survey.get("responses", []), start=1):
+        q_text = response.get("question_text", "")
+        answer = response.get("answer", "")
+        q_id = response.get("question_id", i)
 
         flags = set()
         flags.update(detect_from_question(q_text, patterns))
         flags.update(detect_sensitive_data(answer, patterns))
 
         results.append({
-            "question_id": response["question_id"],
+            "question_id": q_id,
             "question_text": q_text,
             "answer": answer,
             "flags": list(flags)
         })
 
-    return {"survey_id": survey["survey_id"], "results": results}
+    return {
+        "survey_id": survey.get("survey_id", "unknown"),
+        "results": results
+    }
