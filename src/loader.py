@@ -145,6 +145,7 @@ def _parse_txt(file_path: str) -> dict:
 def _parse_xml(file_path: str) -> dict:
     tree = ET.parse(file_path)
     root = tree.getroot()
+
     ns = ""
     if root.tag.startswith("{"):
         ns = root.tag.split("}")[0] + "}"
@@ -152,32 +153,55 @@ def _parse_xml(file_path: str) -> dict:
     survey_id = root.attrib.get("id", os.path.basename(file_path))
     responses = []
 
-    response_containers = root.findall(f".//*[{ns}answer or {ns}response or {ns}text]")
+    # --- FIX: ElementTree does NOT support OR in predicates ---
+    # So we gather all matching containers manually
+    tags_to_search = [f"{ns}answer", f"{ns}response", f"{ns}text"]
+
+    response_containers = []
+    for tag in tags_to_search:
+        for el in root.findall(f".//{tag}/.."):  # parent of the element
+            if el not in response_containers:
+                response_containers.append(el)
+
+    # Fallback: if nothing matched, just treat direct children as responses
     if not response_containers:
         response_containers = list(root)
 
     for i, container in enumerate(response_containers, start=1):
-        q_id = container.attrib.get("id") or container.attrib.get("question_id") or i
-        q_text = (container.findtext(f"{ns}question_text") or
-                  container.findtext(f"{ns}text") or
-                  container.tag.replace(ns, "").replace("_", " ").title())
-        answer = (container.findtext(f"{ns}answer") or
-                  container.findtext(f"{ns}response") or
-                  container.findtext(f"{ns}value") or
-                  container.text or "")
+        q_id = (
+            container.attrib.get("id")
+            or container.attrib.get("question_id")
+            or i
+        )
+
+        q_text = (
+            container.findtext(f"{ns}question_text")
+            or container.findtext(f"{ns}text")
+            or container.tag.replace(ns, "").replace("_", " ").title()
+        )
+
+        answer = (
+            container.findtext(f"{ns}answer")
+            or container.findtext(f"{ns}response")
+            or container.findtext(f"{ns}value")
+            or (container.text or "").strip()
+        )
+
         if not answer and container.attrib:
             answer = next(iter(container.attrib.values()))
+
         if q_text or answer:
             responses.append({
                 "question_id": q_id,
                 "question_text": q_text,
                 "answer": answer
             })
+
     return {"survey_id": survey_id, "responses": responses}
 
 
 # ---------------------------
-# XLSX PARSING (FULLY FLEXIBLE)
+# XLSX PARSING
 # ---------------------------
 def _parse_xlsx(file_path: str) -> dict:
     try:

@@ -1,0 +1,8 @@
+11/25
+JSON working
+CSV working
+XLSX working
+XML NOT working -> functions but repeats information
+
+Need to add txt and yaml/yml parsing
+- considering switching from rule based to ML PII flagging
