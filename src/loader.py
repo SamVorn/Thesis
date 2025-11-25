@@ -4,8 +4,12 @@ import csv
 import xml.etree.ElementTree as ET
 from openpyxl import load_workbook
 import yaml
+from pathlib import Path
 
-def load_survey(file_path):
+# ---------------------------
+# LOAD SURVEY FILE (ANY FORMAT)
+# ---------------------------
+def load_survey(file_path: str) -> dict:
     _, ext = os.path.splitext(file_path)
     ext = ext.lower()
 
@@ -33,18 +37,16 @@ def load_survey(file_path):
         raise ValueError(f"Unsupported survey file type: {ext}")
 
 
-def load_rules(file_path):
+# ---------------------------
+# LOAD RULES (JSON/YAML/TXT)
+# ---------------------------
+def load_rules(file_path: str) -> dict:
     _, ext = os.path.splitext(file_path)
     ext = ext.lower()
-
     with open(file_path, "r", encoding="utf-8") as f:
         if ext in (".json", ".yml", ".yaml"):
-            if ext in (".yml", ".yaml"):
-                return yaml.safe_load(f)
-            return json.load(f)
+            return yaml.safe_load(f) if ext in (".yml", ".yaml") else json.load(f)
         elif ext == ".txt":
-            # Each line = pattern label and regex separated by ":"
-            # Example: email: \b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z]{2,}\b
             rules = {}
             for line in f:
                 line = line.strip()
@@ -57,17 +59,14 @@ def load_rules(file_path):
         else:
             raise ValueError(f"Unsupported rule file type: {ext}")
 
-# ---------------------------
-# FORMAT PARSERS
-# ---------------------------
 
-def _normalize_json(data, file_path):
-    """Normalize any JSON schema into standard structure."""
+# ---------------------------
+# JSON PARSING
+# ---------------------------
+def _normalize_json(data, file_path: str) -> dict:
     keys = ["responses", "questions", "items", "entries"]
     responses = []
     response_list = next((data.get(k) for k in keys if k in data), [])
-
-    # Handle nested sections
     if not response_list and "sections" in data:
         for section in data["sections"]:
             response_list.extend(section.get("questions", []))
@@ -78,107 +77,160 @@ def _normalize_json(data, file_path):
             "question_text": r.get("question_text") or r.get("text") or r.get("question") or "",
             "answer": r.get("answer") or r.get("response") or r.get("value") or ""
         })
-
     survey_id = data.get("survey_id") or data.get("id") or os.path.basename(file_path)
     return {"survey_id": survey_id, "responses": responses}
 
 
-def _parse_csv(file_path):
+# ---------------------------
+# CSV PARSING
+# ---------------------------
+def _parse_csv(file_path: str) -> dict:
     with open(file_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
-        responses = [
-            {
-                "question_id": row.get("question_id") or i,
+        responses = []
+        for i, row in enumerate(reader, start=1):
+            responses.append({
+                "question_id": row.get("question_id") or row.get("id") or i,
                 "question_text": row.get("question_text") or row.get("question") or "",
                 "answer": row.get("answer") or row.get("response") or ""
-            }
-            for i, row in enumerate(reader, start=1)
-        ]
+            })
     return {"survey_id": os.path.basename(file_path), "responses": responses}
 
 
-def _parse_yaml(file_path):
+# ---------------------------
+# YAML PARSING
+# ---------------------------
+def _parse_yaml(file_path: str) -> dict:
     with open(file_path, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
     return _normalize_json(data, file_path)
 
 
-def _parse_xml(file_path):
-    """
-    Expected structure:
-    <survey id="123">
-        <question id="1">
-            <text>What is your name?</text>
-            <answer>Alice</answer>
-        </question>
-    </survey>
-    """
-    tree = ET.parse(file_path)
-    root = tree.getroot()
-    survey_id = root.attrib.get("id", os.path.basename(file_path))
-
-    responses = []
-    for i, q in enumerate(root.findall(".//question"), start=1):
-        responses.append({
-            "question_id": q.attrib.get("id", i),
-            "question_text": q.findtext("text", ""),
-            "answer": q.findtext("answer", "")
-        })
-
-    return {"survey_id": survey_id, "responses": responses}
-
-
-def _parse_xlsx(file_path):
-    """
-    Expects an Excel sheet with columns like:
-    | question_id | question_text | answer |
-    """
-    wb = load_workbook(file_path, read_only=True)
-    ws = wb.active
-
-    headers = [str(c.value).strip().lower() for c in next(ws.iter_rows(min_row=1, max_row=1))]
-    responses = []
-    for i, row in enumerate(ws.iter_rows(min_row=2, values_only=True), start=1):
-        row_data = dict(zip(headers, row))
-        responses.append({
-            "question_id": row_data.get("question_id") or i,
-            "question_text": row_data.get("question_text") or row_data.get("question") or "",
-            "answer": row_data.get("answer") or row_data.get("response") or ""
-        })
-
-    return {"survey_id": os.path.basename(file_path), "responses": responses}
-
-
-def _parse_txt(file_path):
-    """
-    Handles simple text files:
-    Each line may contain 'Question: Answer' or alternating question/answer lines.
-    Example:
-        What is your name?
-        Alice
-        What city do you live in?
-        New York
-    """
+# ---------------------------
+# TXT PARSING
+# ---------------------------
+def _parse_txt(file_path: str) -> dict:
     responses = []
     with open(file_path, "r", encoding="utf-8") as f:
         lines = [line.strip() for line in f if line.strip()]
 
-    # Detect simple "Question: Answer" pattern
-    for i, line in enumerate(lines, start=1):
+    i = 0
+    counter = 1
+    while i < len(lines):
+        line = lines[i]
         if ":" in line:
             parts = line.split(":", 1)
             responses.append({
-                "question_id": i,
+                "question_id": counter,
                 "question_text": parts[0].strip(),
                 "answer": parts[1].strip()
             })
+            i += 1
         else:
-            # Handle alternating lines as question/answer pairs
-            if i % 2 == 1 and i < len(lines):
-                responses.append({
-                    "question_id": i,
-                    "question_text": lines[i - 1],
-                    "answer": lines[i] if i < len(lines) else ""
-                })
-
+            question = lines[i]
+            answer = lines[i+1] if i+1 < len(lines) else ""
+            responses.append({
+                "question_id": counter,
+                "question_text": question,
+                "answer": answer
+            })
+            i += 2
+        counter += 1
     return {"survey_id": os.path.basename(file_path), "responses": responses}
+
+
+# ---------------------------
+# XML PARSING
+# ---------------------------
+def _parse_xml(file_path: str) -> dict:
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+    ns = ""
+    if root.tag.startswith("{"):
+        ns = root.tag.split("}")[0] + "}"
+
+    survey_id = root.attrib.get("id", os.path.basename(file_path))
+    responses = []
+
+    response_containers = root.findall(f".//*[{ns}answer or {ns}response or {ns}text]")
+    if not response_containers:
+        response_containers = list(root)
+
+    for i, container in enumerate(response_containers, start=1):
+        q_id = container.attrib.get("id") or container.attrib.get("question_id") or i
+        q_text = (container.findtext(f"{ns}question_text") or
+                  container.findtext(f"{ns}text") or
+                  container.tag.replace(ns, "").replace("_", " ").title())
+        answer = (container.findtext(f"{ns}answer") or
+                  container.findtext(f"{ns}response") or
+                  container.findtext(f"{ns}value") or
+                  container.text or "")
+        if not answer and container.attrib:
+            answer = next(iter(container.attrib.values()))
+        if q_text or answer:
+            responses.append({
+                "question_id": q_id,
+                "question_text": q_text,
+                "answer": answer
+            })
+    return {"survey_id": survey_id, "responses": responses}
+
+
+# ---------------------------
+# XLSX PARSING (FULLY FLEXIBLE)
+# ---------------------------
+def _parse_xlsx(file_path: str) -> dict:
+    try:
+        wb = load_workbook(file_path, data_only=True)
+        sheet = wb.active
+
+        all_rows = list(sheet.iter_rows(values_only=True))
+        if not all_rows:
+            return {"survey_id": os.path.basename(file_path), "responses": []}
+
+        # Convert all cells to string
+        data_rows = [[str(c).strip() if c is not None else "" for c in row] for row in all_rows]
+
+        # Detect header row
+        header = data_rows[0]
+        if sum(1 for c in header if c) >= len(header)/2:
+            headers = [c.lower() for c in header]
+            data_start = 1
+        else:
+            headers = [f"col_{i}" for i in range(len(header))]
+            data_start = 0
+
+        # Guess question/answer columns
+        q_col = a_col = id_col = None
+        for i, h in enumerate(headers):
+            if "question" in h or "prompt" in h or "text" in h:
+                q_col = i
+            if "answer" in h or "response" in h or "value" in h:
+                a_col = i
+            if "id" in h or "qid" in h:
+                id_col = i
+        if q_col is None:
+            q_col = 0
+        if a_col is None:
+            a_col = 1 if len(headers) > 1 else 0
+
+        # Extract responses
+        responses = []
+        counter = 1
+        for row in data_rows[data_start:]:
+            if all(c == "" for c in row):
+                continue
+            question_id = row[id_col] if id_col is not None and id_col < len(row) and row[id_col] else str(counter)
+            question_text = row[q_col] if q_col < len(row) else ""
+            answer = row[a_col] if a_col < len(row) else ""
+            responses.append({
+                "question_id": str(question_id),
+                "question_text": str(question_text),
+                "answer": str(answer)
+            })
+            counter += 1
+
+        return {"survey_id": os.path.basename(file_path), "responses": responses}
+
+    except Exception as e:
+        raise Exception(f"Error parsing XLSX file: {e}")

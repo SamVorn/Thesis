@@ -9,3 +9,6 @@ regex and rules - simple
 
 pipeline.py
 full direction process
+
+method to flag
+method to anonymize
