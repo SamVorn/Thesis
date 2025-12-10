@@ -6,3 +6,12 @@ XML NOT working -> functions but repeats information
 
 Need to add txt and yaml/yml parsing
 - considering switching from rule based to ML PII flagging
+
+12/4
+1. Choose between model types - talk about in thesis
+- HuggingFace model (easier fine-tuning)
+- GPT model via API (if needing to fine-tune use GPT-2) - cannot use gpt-4 too massive and cannot send pii to gpt that is a breach
+- look into more models
+2. Find candidates for sensitive data 
+- Database can  be sql based or not (mongodb vs sql) (variable)
+- Ask for approval “hey this is the analysis and what is says based on your selection im going to anonymize it” - pick method from report
