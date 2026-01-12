@@ -1,31 +1,23 @@
 import json
 from pathlib import Path
-from typing import Dict, Generator
 from .interface import SurveyDataSource
 
-class FileDataSource(SurveyDataSource):
-    def __init__(self, dataset_dir: str):
-        self.dataset_dir = Path(dataset_dir)
+class FileSurveySource(SurveyDataSource):
+    def __init__(self, folder_path: str):
+        self.folder = Path(folder_path)
 
-    def get_survey_template(self, survey_id: str) -> Dict | None:
-        template_path = self.dataset_dir / f"{survey_id}_template.json"
-        if template_path.exists():
-            with open(template_path, "r", encoding="utf-8") as f:
-                return json.load(f)
-        return None
+    def get_survey_template(self, survey_id: str):
+        template_path = self.folder / f"{survey_id}_template.json"
+        with open(template_path) as f:
+            return json.load(f)
 
-    def iter_responses(self, survey_id: str) -> Generator[Dict, None, None]:
-        for file_path in self.dataset_dir.glob("*.json"):
-            try:
-                with open(file_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-            except json.JSONDecodeError:
-                continue  # skip invalid JSON
+    def iter_responses(self, survey_id: str):
+        responses_path = self.folder / f"{survey_id}_responses.json"
+        with open(responses_path) as f:
+            for r in json.load(f):
+                yield r
 
-            if data.get("survey_id") != survey_id:
-                continue
-
-            yield {
-                "respondent_id": data.get("respondent_id", "unknown"),
-                "answers": data.get("answers", {})
-            }
+    def save_flags(self, survey_id: str, flagged_data):
+        flags_path = self.folder / f"{survey_id}_flags.json"
+        with open(flags_path, "w") as f:
+            json.dump(list(flagged_data), f, indent=2)
