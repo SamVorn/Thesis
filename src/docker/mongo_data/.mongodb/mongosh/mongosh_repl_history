@@ -1,3 +1,9 @@
+show collections
+db.survey_templates.findOne()
+db.surveys.find().pretty()
+show collections
+use thesis_pipeline
+use thesis-mongo
 db.responses.find().pretty()
 db.surveys.find().pretty()
 de.surveys.find().pretty()
