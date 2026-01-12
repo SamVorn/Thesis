@@ -1,8 +1,0 @@
-{
-  "EMAIL": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
-  "PHONE": "\\b\\d{3}[-.]?\\d{3}[-.]?\\d{4}\\b",
-  "ADDRESS": "\\b\\d{1,5}\\s+[A-Za-z0-9\\s]+(Street|St|Rd|Road|Ave|Avenue|Blvd|Lane|Ln|Dr|Drive|Ct|Court|Way|Pl|Place|Pkwy|Parkway)\\b",
-  "NAME_KEYWORD": "\\b(name|full name|your name)\\b",
-  "DATE": "\\b(\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}|\\d{4}-\\d{2}-\\d{2}(?: \\d{2}:\\d{2}:\\d{2})?)\\b"
-
-}

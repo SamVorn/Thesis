@@ -1,0 +1,22 @@
+db.responses.find().pretty()
+db.surveys.find().pretty()
+de.surveys.find().pretty()
+show collections
+use thesis_pipeline
+ show dbs
+show collections
+use thesis_pipeline
+show collections
+use thesis-pipeline
+docker stop thesis-mongo
+show collections
+use thesis_pipeline
+show dbs
+docker ps -a
+cls
+clear
+& C:/Users/Sam/AppData/Local/Microsoft/WindowsApps/python3.13.exe c:/Users/Sam/Desktop/thesis/Thesis/src/tests/test_mongo_pipeline.py
+db.surveys.find().pretty()
+show collections
+use thesis_pipelinellections
+use thesis_pipeline
