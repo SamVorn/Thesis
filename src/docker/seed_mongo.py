@@ -8,7 +8,7 @@ db = client["thesis_pipeline"]
 db.drop_collection("surveys")
 db.drop_collection("responses")
 
-# Insert survey with questions at the top level
+# survey with questions
 db["surveys"].insert_one({
     "survey_id": "survey1",
     "questions": [
@@ -17,7 +17,7 @@ db["surveys"].insert_one({
     ]
 })
 
-# Insert some sample PII responses
+# sample PII responses
 db["responses"].insert_many([
     {"survey_id": "survey1", "answers": {"q1": "Alice Johnson", "q2": "alice@example.com"}},
     {"survey_id": "survey1", "answers": {"q1": "Bob Smith", "q2": "bob.smith@example.com"}}

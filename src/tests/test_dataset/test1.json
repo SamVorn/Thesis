@@ -1,31 +1,7 @@
-{
-  "survey_id": "001",
-  "responses": [
-    {
-      "question_id": "q1",
-      "question_text": "What is your full name?",
-      "answer": "John Smith"
-    },
-    {
-      "question_id": "q2",
-      "question_text": "Where do you live?",
-      "answer": "12 Quincy Street, Boston"
-    },
-    {
-      "question_id": "q3",
-      "question_text": "How was your experience?",
-      "answer": "It was bad"
-    },
-    {
-      "question_id": "q4",
-      "question_text": "What is your email address?",
-      "answer": "johnsmith112@gmail.com"
-
-    },
-    {
-      "question_id": "q5",
-      "question_text": "What is your phone number?",
-      "answer": "555-456-8910"
-    }
-  ]
-}
+[
+  {"question_id": "q1", "answer": "John Smith"},
+  {"question_id": "q2", "answer": "12 Quincy Street, Boston"},
+  {"question_id": "q3", "answer": "It was bad"},
+  {"question_id": "q4", "answer": "johnsmith112@gmail.com"},
+  {"question_id": "q5", "answer": "555-456-8910"}
+]

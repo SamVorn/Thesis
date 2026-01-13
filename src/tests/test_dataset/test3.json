@@ -1,31 +1,7 @@
-{
-  "survey_id": "003",
-  "responses": [
-    {
-      "question_id": "q1",
-      "question_text": "What is your full name?",
-      "answer": "Drake Hammond"
-    },
-    {
-      "question_id": "q2",
-      "question_text": "Where do you live?",
-      "answer": "227 Stevens St, Fall River"
-    },
-    {
-      "question_id": "q3",
-      "question_text": "How was your experience?",
-      "answer": "It was excellent!"
-    },
-    {
-      "question_id": "q4",
-      "question_text": "What is your email address?",
-      "answer": "drizzydre@gmail.com"
-
-    },
-    {
-      "question_id": "q5",
-      "question_text": "What is your phone number?",
-      "answer": "352-278-5518"
-    }
-  ]
-}
+[
+  {"question_id": "q1", "answer": "Drake Hammond"},
+  {"question_id": "q2", "answer": "227 Stevens St, Fall River"},
+  {"question_id": "q3", "answer": "It was excellent!"},
+  {"question_id": "q4", "answer": "drizzydre@gmail.com"},
+  {"question_id": "q5", "answer": "352-278-5518"}
+]

@@ -1,5 +1,6 @@
 from sqlalchemy import create_engine, text
 from .interface import SurveyDataSource
+import json
 
 class SQLSurveySource(SurveyDataSource):
     def __init__(self, connection_string: str, table_names: dict):
@@ -14,16 +15,24 @@ class SQLSurveySource(SurveyDataSource):
         self.tables = table_names
 
     def get_survey_template(self, survey_id: str):
-        query = f"SELECT * FROM {self.tables['templates']} WHERE survey_id=:survey_id"
+        query = f"SELECT template_json FROM {self.tables['templates']} WHERE survey_id=:survey_id"
         with self.engine.connect() as conn:
             result = conn.execute(text(query), {"survey_id": survey_id}).first()
-            return dict(result) if result else None
+            if not result:
+                return None
+            return json.loads(result.template_json) if isinstance(result.template_json, str) else result.template_json
 
     def iter_responses(self, survey_id: str):
         query = f"SELECT * FROM {self.tables['responses']} WHERE survey_id=:survey_id"
+
         with self.engine.connect() as conn:
             for row in conn.execute(text(query), {"survey_id": survey_id}):
-                yield dict(row)
+                r = dict(row._mapping)  # <-- Use _mapping for Postgres compatibility
+
+                yield {
+                    "respondent_id": r.get("respondent_id") or r.get("id"),
+                    "answers": json.loads(r["answers_json"]) if isinstance(r.get("answers_json"), str) else r.get("answers_json")
+                }
 
     def save_flags(self, survey_id: str, flagged_data):
         query = f"INSERT INTO {self.tables['flags']} (survey_id, data) VALUES (:survey_id, :data)"

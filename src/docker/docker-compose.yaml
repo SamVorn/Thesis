@@ -1,8 +1,27 @@
+version: "3.8"
+
 services:
   mongo:
-    image: mongo:latest
-    container_name: thesis-mongo
+    image: mongo:7
+    container_name: thesis_mongo
     ports:
       - "27017:27017"
     volumes:
-      - ./mongo_data:/data/db
+      - mongodata:/data/db
+
+  postgres:
+    image: postgres:16
+    container_name: thesis_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: thesis_pipeline
+      POSTGRES_USER: thesis
+      POSTGRES_PASSWORD: thesis
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  mongodata:
+  pgdata:

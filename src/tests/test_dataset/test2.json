@@ -1,31 +1,7 @@
-{
-  "survey_id": "002",
-  "responses": [
-    {
-      "question_id": "q1",
-      "question_text": "What is your full name?",
-      "answer": "Sabrina Cortez"
-    },
-    {
-      "question_id": "q2",
-      "question_text": "Where do you live?",
-      "answer": "90 Park Ave Amherst"
-    },
-    {
-      "question_id": "q3",
-      "question_text": "How was your experience?",
-      "answer": "It was fine"
-    },
-    {
-      "question_id": "q4",
-      "question_text": "What is your email address?",
-      "answer": "scortez68@gmail.com"
-
-    },
-    {
-      "question_id": "q5",
-      "question_text": "What is your phone number?",
-      "answer": "107-172-1834"
-    }
-  ]
-}
+[
+  {"question_id": "q1", "answer": "Sabrina Cortez"},
+  {"question_id": "q2", "answer": "90 Park Ave Amherst"},
+  {"question_id": "q3", "answer": "It was fine"},
+  {"question_id": "q4", "answer": "scortez68@gmail.com"},
+  {"question_id": "q5", "answer": "107-172-1834"}
+]
