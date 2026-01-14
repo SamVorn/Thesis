@@ -1,0 +1,142 @@
+[
+  {
+    "respondent_id": "test0",
+    "question_id": "q1",
+    "flags": [
+      "NAME_KEYWORD"
+    ]
+  },
+  {
+    "respondent_id": "test0",
+    "question_id": "q2",
+    "flags": [
+      "ADDRESS"
+    ]
+  },
+  {
+    "respondent_id": "test0",
+    "question_id": "q4",
+    "flags": [
+      "EMAIL"
+    ]
+  },
+  {
+    "respondent_id": "test0",
+    "question_id": "q5",
+    "flags": [
+      "PHONE"
+    ]
+  },
+  {
+    "respondent_id": "test1",
+    "question_id": "q1",
+    "flags": [
+      "NAME_KEYWORD"
+    ]
+  },
+  {
+    "respondent_id": "test1",
+    "question_id": "q2",
+    "flags": [
+      "ADDRESS"
+    ]
+  },
+  {
+    "respondent_id": "test1",
+    "question_id": "q4",
+    "flags": [
+      "EMAIL"
+    ]
+  },
+  {
+    "respondent_id": "test1",
+    "question_id": "q5",
+    "flags": [
+      "PHONE"
+    ]
+  },
+  {
+    "respondent_id": "test2",
+    "question_id": "q1",
+    "flags": [
+      "NAME_KEYWORD"
+    ]
+  },
+  {
+    "respondent_id": "test2",
+    "question_id": "q2",
+    "flags": [
+      "ADDRESS"
+    ]
+  },
+  {
+    "respondent_id": "test2",
+    "question_id": "q4",
+    "flags": [
+      "EMAIL"
+    ]
+  },
+  {
+    "respondent_id": "test2",
+    "question_id": "q5",
+    "flags": [
+      "PHONE"
+    ]
+  },
+  {
+    "respondent_id": "test3",
+    "question_id": "q1",
+    "flags": [
+      "NAME_KEYWORD"
+    ]
+  },
+  {
+    "respondent_id": "test3",
+    "question_id": "q2",
+    "flags": [
+      "ADDRESS"
+    ]
+  },
+  {
+    "respondent_id": "test3",
+    "question_id": "q4",
+    "flags": [
+      "EMAIL"
+    ]
+  },
+  {
+    "respondent_id": "test3",
+    "question_id": "q5",
+    "flags": [
+      "PHONE"
+    ]
+  },
+  {
+    "respondent_id": "test4",
+    "question_id": "q1",
+    "flags": [
+      "NAME_KEYWORD"
+    ]
+  },
+  {
+    "respondent_id": "test4",
+    "question_id": "q2",
+    "flags": [
+      "ADDRESS"
+    ]
+  },
+  {
+    "respondent_id": "test4",
+    "question_id": "q4",
+    "flags": [
+      "EMAIL"
+    ]
+  },
+  {
+    "respondent_id": "test4",
+    "question_id": "q5",
+    "flags": [
+      "PHONE"
+    ]
+  }
+]

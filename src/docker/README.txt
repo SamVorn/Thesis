@@ -53,6 +53,8 @@ python seed_sql.py
 python -m src.tests.test_sql_pipeline
 
 
+to completely remove docker containers networks and volumes
+docker-compose down -v
 
 
 

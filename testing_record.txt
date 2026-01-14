@@ -15,3 +15,28 @@ Need to add txt and yaml/yml parsing
 2. Find candidates for sensitive data 
 - Database can  be sql based or not (mongodb vs sql) (variable)
 - Ask for approval “hey this is the analysis and what is says based on your selection im going to anonymize it” - pick method from report
+
+1/5
+resolved importing issues on new pc 
+- import pyyaml and openpyxl
+
+1/12
+testing with mongo db, having to set up docker
+docker setup complete
+need to set up sql based database reading
+need to set up file system based database reading
+worked on mongo db database reading - not broad to NoSQL databases must study
+attempting data abstraction, need to test on another NoSQL database to check if works
+
+1/13
+worked on SQL based database reading
+edited docker compose yaml file 
+SQL based databases should be able to work, need to check with something other than SQL Lite to see
+began implementation of file based database interface adapter
+
+next steps - 
+1. implement version with gpt 4 to check pii
+2. fine tune ML model to take place of gpt 4 to check pii
+3. test with other NoSQL and SQL based databases
+4. use live databases
+5. begin data anonymization pipeline once pii detector is complete

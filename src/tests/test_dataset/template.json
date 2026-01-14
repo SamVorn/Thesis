@@ -1,7 +1,10 @@
-[
-  {"question_id": "q1", "question_text": "What is your full name?"},
-  {"question_id": "q2", "question_text": "Where do you live?"},
-  {"question_id": "q3", "question_text": "How was your experience?"},
-  {"question_id": "q4", "question_text": "What is your email address?"},
-  {"question_id": "q5", "question_text": "What is your phone number?"}
-]
+{
+  "survey_id": "survey1",
+  "questions":[
+    {"question_id": "q1", "question_text": "What is your full name?"},
+    {"question_id": "q2", "question_text": "Where do you live?"},
+    {"question_id": "q3", "question_text": "How was your experience?"},
+    {"question_id": "q4", "question_text": "What is your email address?"},
+    {"question_id": "q5", "question_text": "What is your phone number?"}
+  ]
+}
