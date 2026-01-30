@@ -20,8 +20,9 @@ class DocumentSurveySource(SurveyDataSource):
     def iter_responses(self, survey_id: str) -> Generator[Dict, None, None]:
         for r in self.responses.find({"survey_id": survey_id}):
             yield {
-                "respondent_id": r.get("_id"),  # normalize ID
-                "answers": r.get("answers", {})  # normalize answers
+                # normalization 
+                "respondent_id": r.get("_id"),  
+                "answers": r.get("answers", {})  
             }
 
     def save_flags(self, survey_id: str, flagged_data):

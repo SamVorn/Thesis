@@ -6,9 +6,7 @@ from openpyxl import load_workbook
 import yaml
 from pathlib import Path
 
-# ---------------------------
-# LOAD SURVEY FILE (ANY FORMAT)
-# ---------------------------
+# consult with cul about structure and format parsing, may be unnecessary given the nature of SQL and NoSQL data sources
 def load_survey(file_path: str) -> dict:
     _, ext = os.path.splitext(file_path)
     ext = ext.lower()
@@ -36,10 +34,6 @@ def load_survey(file_path: str) -> dict:
     else:
         raise ValueError(f"Unsupported survey file type: {ext}")
 
-
-# ---------------------------
-# LOAD RULES (JSON/YAML/TXT)
-# ---------------------------
 def load_rules(file_path: str) -> dict:
     _, ext = os.path.splitext(file_path)
     ext = ext.lower()
@@ -60,9 +54,7 @@ def load_rules(file_path: str) -> dict:
             raise ValueError(f"Unsupported rule file type: {ext}")
 
 
-# ---------------------------
-# JSON PARSING
-# ---------------------------
+# json - check if necessary atp
 def _normalize_json(data, file_path: str) -> dict:
     keys = ["responses", "questions", "items", "entries"]
     responses = []
@@ -80,10 +72,7 @@ def _normalize_json(data, file_path: str) -> dict:
     survey_id = data.get("survey_id") or data.get("id") or os.path.basename(file_path)
     return {"survey_id": survey_id, "responses": responses}
 
-
-# ---------------------------
-# CSV PARSING
-# ---------------------------
+# csv
 def _parse_csv(file_path: str) -> dict:
     with open(file_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -96,19 +85,14 @@ def _parse_csv(file_path: str) -> dict:
             })
     return {"survey_id": os.path.basename(file_path), "responses": responses}
 
-
-# ---------------------------
-# YAML PARSING
-# ---------------------------
+# yaml
 def _parse_yaml(file_path: str) -> dict:
     with open(file_path, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
     return _normalize_json(data, file_path)
 
 
-# ---------------------------
-# TXT PARSING
-# ---------------------------
+# txt
 def _parse_txt(file_path: str) -> dict:
     responses = []
     with open(file_path, "r", encoding="utf-8") as f:
@@ -138,10 +122,7 @@ def _parse_txt(file_path: str) -> dict:
         counter += 1
     return {"survey_id": os.path.basename(file_path), "responses": responses}
 
-
-# ---------------------------
-# XML PARSING
-# ---------------------------
+# xml - not tested
 def _parse_xml(file_path: str) -> dict:
     tree = ET.parse(file_path)
     root = tree.getroot()
@@ -200,9 +181,7 @@ def _parse_xml(file_path: str) -> dict:
     return {"survey_id": survey_id, "responses": responses}
 
 
-# ---------------------------
-# XLSX PARSING
-# ---------------------------
+#xlsx
 def _parse_xlsx(file_path: str) -> dict:
     try:
         wb = load_workbook(file_path, data_only=True)

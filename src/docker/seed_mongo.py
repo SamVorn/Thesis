@@ -4,7 +4,7 @@ from pymongo import MongoClient
 client = MongoClient("mongodb://localhost:27017")
 db = client["thesis_pipeline"]
 
-# Drop collections to reset
+# Drop collections to reset - redundancy
 db.drop_collection("surveys")
 db.drop_collection("responses")
 
