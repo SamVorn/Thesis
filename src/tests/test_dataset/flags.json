@@ -1,5 +1,12 @@
 [
   {
+    "respondent_id": "flags",
+    "question_id": "q1",
+    "flags": [
+      "NAME_KEYWORD"
+    ]
+  },
+  {
     "respondent_id": "test0",
     "question_id": "q1",
     "flags": [

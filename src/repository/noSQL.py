@@ -2,9 +2,8 @@ from typing import Dict, Generator
 from .interface import SurveyDataSource
 """
 noSQL.py
-Fully generic document-based NoSQL adapter for the survey pipeline.
-Works with MongoDB, DynamoDB, CouchDB, Firestore, or any document store
-implementing find_one, find, and insert_many methods.
+generic document-based NoSQL adapter for the survey pipeline.
+should with MongoDB, DynamoDB, CouchDB, Firestore, or any document store
 """
 
 class DocumentSurveySource(SurveyDataSource):

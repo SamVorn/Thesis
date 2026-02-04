@@ -13,41 +13,44 @@ class SurveyDataSource(ABC):
         """Yields responses one at a time"""
         pass
 
-class FileDataSource(SurveyDataSource):
-    def __init__(self, dataset_dir):
-        self.dataset_dir = dataset_dir
+#literally what the fuck is this? VVVVV
 
-    def get_survey_template(self, survey_id):
-        ...
+# class FileDataSource(SurveyDataSource):
+#     def __init__(self, dataset_dir):
+#         self.dataset_dir = dataset_dir
 
-    def iter_responses(self, survey_id):
-        yield {
-            "respondent_id": "...",
-            "answers": {...}
-        }
+#     def get_survey_template(self, survey_id):
+#         ...
 
-class SQLDataSource(SurveyDataSource):
-    def __init__(self, connection):
-        self.conn = connection
+#     def iter_responses(self, survey_id):
+#         yield {
+#             "respondent_id": "...",
+#             "answers": {...}
+#         }
 
-    def get_survey_template(self, survey_id):
-        ...
+# class SQLDataSource(SurveyDataSource):
+#     def __init__(self, connection):
+#         self.conn = connection
 
-    def iter_responses(self, survey_id):
-        yield {
-            "respondent_id": response_id,
-            "answers": {...}
-        }
+#     def get_survey_template(self, survey_id):
+#         ...
 
-class MongoDataSource(SurveyDataSource):
-    def __init__(self, collection):
-        self.collection = collection
+#     def iter_responses(self, survey_id):
+#         yield {
+#             "respondent_id": response_id,
+#             "answers": {...}
+#         }
 
-    def get_survey_template(self, survey_id):
-        ...
+# #check the NoSQL naming consistency and if it is being used rather than the general adapter
+# class NoSQLDataSource(SurveyDataSource):
+#     def __init__(self, collection):
+#         self.collection = collection
 
-    def iter_responses(self, survey_id):
-        yield {
-            "respondent_id": doc["_id"],
-            "answers": doc["answers"]
-        }
+#     def get_survey_template(self, survey_id):
+#         ...
+
+#     def iter_responses(self, survey_id):
+#         yield {
+#             "respondent_id": doc["_id"],
+#             "answers": doc["answers"]
+#         }

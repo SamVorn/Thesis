@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 from src.repository.noSQL import DocumentSurveySource  # the general adapter
+# check why using general adapter rather than the noSQL adapter
 from src.pipeline import run_pipeline
 
 # using mongodb for testing
