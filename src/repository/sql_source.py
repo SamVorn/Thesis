@@ -27,7 +27,8 @@ class SQLSurveySource(SurveyDataSource):
 
         with self.engine.connect() as conn:
             for row in conn.execute(text(query), {"survey_id": survey_id}):
-                r = dict(row._mapping)  # <-- Use _mapping for Postgres compatibility
+                # postgres
+                r = dict(row._mapping)  
 
                 yield {
                     "respondent_id": r.get("respondent_id") or r.get("id"),
