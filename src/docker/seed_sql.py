@@ -1,4 +1,5 @@
-# seed_sql.py
+#src/docker/seed_sql.py
+
 from sqlalchemy import create_engine, text
 import json
 

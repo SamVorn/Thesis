@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+#src/docker/seed_mongo.py
 
 # Connect to Docker MongoDB
 client = MongoClient("mongodb://localhost:27017")

@@ -3,10 +3,6 @@
 import hashlib
 import re
 
-# -------------------------
-# Pseudonymization Functions
-# -------------------------
-
 def anonymize_email(email: str) -> str:
     """Consistently pseudonymize emails."""
     if not email:
@@ -26,10 +22,6 @@ def anonymize_phone(phone: str) -> str:
         return phone
     return re.sub(r"\d", "X", phone)
 
-# -------------------------
-# Generalization Functions
-# -------------------------
-
 def anonymize_age(age: int) -> str:
     """Generalize age into age brackets."""
     if age is None:
@@ -43,9 +35,6 @@ def anonymize_age(age: int) -> str:
     else:
         return "40+"
 
-# -------------------------
-# Main Anonymization Dispatcher
-# -------------------------
 
 def anonymize_field(field_name: str, value):
     """Dispatch to the correct anonymization function based on field name."""

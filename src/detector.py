@@ -1,3 +1,5 @@
+# src/detector.py
+
 import re
 
 def detect_sensitive_data(answer: str, patterns: dict) -> list:

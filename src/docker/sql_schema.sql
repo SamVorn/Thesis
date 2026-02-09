@@ -1,3 +1,5 @@
+-- src/docker/sql_schema.sql
+
 -- Survey templates table
 CREATE TABLE IF NOT EXISTS survey_templates (
     survey_id TEXT PRIMARY KEY,

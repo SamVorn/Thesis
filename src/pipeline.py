@@ -1,3 +1,5 @@
+# src/pipeline.py
+
 from src.detector import detect_sensitive_data, detect_from_question
 from src.loader import load_rules
 from typing import Optional
