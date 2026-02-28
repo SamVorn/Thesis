@@ -1,0 +1,15 @@
+SQLAlchemy abstracts the SQL dialects
+
+Your queries use parameterized SQL via text(...) and :param style bindings.
+
+SQLAlchemy will translate this into the correct syntax for Postgres, MySQL, SQLite, MariaDB, etc.
+
+No engine-specific code in the adapter
+
+get_survey_template, iter_responses, save_flags just use engine.connect() and conn.execute(text(query), params).
+
+No Postgres-only functions, no SQLite-only hacks.
+
+Table names are passed in dynamically
+
+table_names dict lets you point to different table structures, so you can reuse the same adapter for multiple SQL DBs.

@@ -1,16 +1,10 @@
 import json
 from pathlib import Path
+from typing import Optional
 from src.repository.interface import SurveyDataSource
 
 
 class FileSurveySource(SurveyDataSource):
-    """
-    File-based survey data source.
-
-    - Discovers the survey template and responses by structure, not filename
-    - Ignores survey_id (batch-oriented source)
-    """
-
     def __init__(self, folder_path: str):
         self.folder = Path(folder_path)
         self._template = None
@@ -18,9 +12,7 @@ class FileSurveySource(SurveyDataSource):
         self._discover_files()
 
     def _discover_files(self):
-        """
-        Discover template and response files based on JSON structure.
-        """
+        # Discover template and response files based on JSON structure.
         if not self.folder.exists():
             raise FileNotFoundError(f"Dataset folder not found: {self.folder}")
 
@@ -48,14 +40,14 @@ class FileSurveySource(SurveyDataSource):
                 self._responses.append((f, data))
 
                 
-    def get_survey_template(self, survey_id: str | None = None):
+    def get_survey_template(self, survey_id: Optional[str] = None):
         """
         Return the discovered survey template.
         survey_id is ignored for file-based sources.
         """
         return self._template
 
-    def iter_responses(self, survey_id: str | None = None):
+    def iter_responses(self, survey_id: Optional[str] = None):
         """
         Iterate over all discovered responses.
         survey_id is ignored for file-based sources.
@@ -81,7 +73,7 @@ class FileSurveySource(SurveyDataSource):
             }
 
 
-    def save_flags(self, survey_id, flagged_data):
+    def save_flags(self, survey_id: Optional[str], flagged_data) -> None:
         """
         Persist anonymization flags.
         survey_id is ignored for file-based sources.

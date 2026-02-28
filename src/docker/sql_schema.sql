@@ -18,3 +18,10 @@ CREATE TABLE IF NOT EXISTS pii_flags (
     survey_id TEXT,
     data JSONB
 );
+
+CREATE TABLE IF NOT EXISTS survey_responses_anonymized (
+   respondent_id TEXT,
+    survey_id TEXT REFERENCES survey_templates(survey_id),
+    answers_json JSONB,
+    PRIMARY KEY (respondent_id, survey_id)
+);
