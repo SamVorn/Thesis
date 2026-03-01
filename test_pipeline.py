@@ -1,30 +1,39 @@
 # test_pipeline.py
 """
 Unified pipeline test
-lets pray this one actually works
+lets pray this actually works
+
+Usage:
+    python test_pipeline.py                     
+    python test_pipeline.py --source mongo
+    python test_pipeline.py --source sql
+    python test_pipeline.py --source file
+    python test_pipeline.py --source file --no-confirm
+    python test_pipeline.py --source file --no-ai
 """
 
 import argparse
 import sys
 
-# Configuration: edit these if your connection details change
-MONGO_URI       = "mongodb://localhost:27017"
-MONGO_DB        = "thesis_pipeline"
-SURVEY_ID       = "survey1"
+# config
+MONGO_URI    = "mongodb://localhost:27017"
+MONGO_DB     = "thesis_pipeline"
+SURVEY_ID    = "survey1"
 
-SQL_CONN        = "postgresql://thesis:thesis@localhost:5432/thesis_pipeline"
-SQL_TABLES      = {
+SQL_CONN     = "postgresql://thesis:thesis@localhost:5432/thesis_pipeline"
+SQL_TABLES   = {
     "templates": "survey_templates",
     "responses": "survey_responses",
     "flags":     "pii_flags",
 }
 
-FILE_DATASET    = "src/tests/test_dataset"
-FILE_OUTPUT     = "src/tests/test_dataset/anonymized_output.json"
+FILE_DATASET = "src/tests/test_dataset"
+FILE_OUTPUT  = "src/tests/test_dataset/anonymized_output.json"
 
-RULES_PATH      = "src/rules/pii_patterns.json"
+RULES_PATH   = "src/rules/pii_patterns.json"
+OLLAMA_MODEL = "llama3.1:8b"   # swap to "mistral:7b" if needed
 
-# source builders
+# sources
 def build_mongo_source():
     from pymongo import MongoClient
     from src.repository.noSQL import DocumentSurveySource
@@ -37,7 +46,7 @@ def build_mongo_source():
         response_collection=db.responses,
         flags_collection=db.flags,
     )
-    return source, db   # return db so the caller can print results
+    return source, db
 
 
 def build_sql_source():
@@ -50,13 +59,13 @@ def build_sql_source():
 
 
 def build_file_source():
-    from pathlib import Path
     from src.repository.file_source import FileSurveySource
 
     source = FileSurveySource(FILE_DATASET)
     return source, None
 
-# pipeline builders
+
+# pipeline builder
 def build_pipeline(backend: str, source, detector, extra):
     from src.anonymization.run_pipeline import (
         DocumentAnonymizationPipeline,
@@ -90,7 +99,8 @@ def build_pipeline(backend: str, source, detector, extra):
 
     raise ValueError(f"Unknown backend: {backend!r}")
 
-# results
+
+# printing results, self explanatory man come on
 def print_mongo_results(db, survey_id: str):
     print("\n  Anonymized records (MongoDB → responses_anonymized):")
     for record in db.responses_anonymized.find({"survey_id": survey_id}):
@@ -134,6 +144,7 @@ def print_file_results():
             print(f"      {qid}: {val!r}")
 
 
+# back end picker for database choosing
 def pick_backend() -> str:
     print("\n  Select a data source backend:")
     print("    1) MongoDB  (NoSQL)")
@@ -141,13 +152,11 @@ def pick_backend() -> str:
     print("    3) File     (JSON)")
     while True:
         choice = input("\n  Enter 1, 2, or 3: ").strip()
-        if choice == "1":
-            return "mongo"
-        if choice == "2":
-            return "sql"
-        if choice == "3":
-            return "file"
+        if choice == "1": return "mongo"
+        if choice == "2": return "sql"
+        if choice == "3": return "file"
         print("  Invalid choice, try again.")
+
 
 
 def main():
@@ -160,18 +169,39 @@ def main():
         "--no-confirm", action="store_true",
         help="Skip interactive strategy confirmation and use recommended strategies"
     )
+    parser.add_argument(
+        "--no-ai", action="store_true",
+        help="Skip Ollama AI layer and run static regex detection only"
+    )
     args = parser.parse_args()
 
     backend    = args.source or pick_backend()
     do_confirm = not args.no_confirm
+    use_ai     = not args.no_ai
 
-    print(f"\n  Backend: {backend.upper()}")
-    print(f"  Interactive confirm: {'yes' if do_confirm else 'no (using recommendations)'}")
+    print(f"\n  Backend : {backend.upper()}")
+    print(f"  AI layer: {'enabled (' + OLLAMA_MODEL + ')' if use_ai else 'disabled (--no-ai)'}")
+    print(f"  Confirm : {'interactive' if do_confirm else 'auto (--no-confirm)'}")
 
-    # building source and detectors
-    from src.anonymization.detector import PIIDetector
+    # detector
+    from src.anonymization.hybrid_detector import HybridDetector
+    from src.anonymization.ai_detector import AIDetector
 
-    detector = PIIDetector(patterns_path=RULES_PATH)
+    if use_ai:
+        ai = AIDetector(model=OLLAMA_MODEL)
+        if not ai.is_available():
+            print(
+                "\n  WARNING: Ollama is not reachable at http://localhost:11434."
+                "\n           Falling back to static-only detection."
+                "\n           To enable AI: run `ollama serve` then `ollama pull llama3.1:8b`\n"
+            )
+            use_ai = False
+
+    detector = HybridDetector(
+        patterns_path=RULES_PATH,
+        use_ai=use_ai,
+        model=OLLAMA_MODEL,
+    )
 
     if backend == "mongo":
         source, extra = build_mongo_source()
@@ -183,9 +213,9 @@ def main():
         source, extra = build_file_source()
         survey_id     = None   # file source ignores survey_id
 
-    # building our pipeline here
     pipeline = build_pipeline(backend, source, detector, extra)
 
+    # running detection
     print("\n  Running PII detection...")
     analysis = pipeline.detect(survey_id)
 
@@ -193,13 +223,15 @@ def main():
         print("  No fields found. Is the survey seeded?")
         sys.exit(0)
 
+    
     pipeline.review(analysis)
-
     if do_confirm:
         confirmed = pipeline.confirm(analysis)
     else:
-        # Auto accept all recommendations
-        confirmed = [dict(f, chosen_strategy=f["recommended_strategy"]) for f in analysis]
+        confirmed = [
+            {**f, "chosen_strategy": f["recommended_strategy"]}
+            for f in analysis
+        ]
         print("  Using recommended strategies (--no-confirm).")
 
     print("\n  Applying anonymization...")
