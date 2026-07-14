@@ -1,0 +1,405 @@
+{
+  "survey_id": "survey_ben",
+  "questions": [
+    {
+      "question_id": "BEN001",
+      "text": "What is your favorite color?"
+    },
+    {
+      "question_id": "BEN002",
+      "text": "What type of music do you enjoy most?"
+    },
+    {
+      "question_id": "BEN003",
+      "text": "What is your favorite genre of movies?"
+    },
+    {
+      "question_id": "BEN004",
+      "text": "Do you prefer reading books or watching TV?"
+    },
+    {
+      "question_id": "BEN005",
+      "text": "What is your favorite season of the year?"
+    },
+    {
+      "question_id": "BEN006",
+      "text": "What type of cuisine do you enjoy most?"
+    },
+    {
+      "question_id": "BEN007",
+      "text": "Do you prefer coffee or tea?"
+    },
+    {
+      "question_id": "BEN008",
+      "text": "What is your favorite outdoor activity?"
+    },
+    {
+      "question_id": "BEN009",
+      "text": "Do you consider yourself an introvert or extrovert?"
+    },
+    {
+      "question_id": "BEN010",
+      "text": "How do you prefer to spend your weekends?"
+    },
+    {
+      "question_id": "BEN011",
+      "text": "What is your favorite holiday?"
+    },
+    {
+      "question_id": "BEN012",
+      "text": "Do you prefer mountains or beaches?"
+    },
+    {
+      "question_id": "BEN013",
+      "text": "How many hours of TV do you watch per week?"
+    },
+    {
+      "question_id": "BEN014",
+      "text": "What streaming services do you subscribe to?"
+    },
+    {
+      "question_id": "BEN015",
+      "text": "What is your favorite type of exercise?"
+    },
+    {
+      "question_id": "BEN016",
+      "text": "How often do you exercise per week?"
+    },
+    {
+      "question_id": "BEN017",
+      "text": "Do you prefer cooking at home or eating out?"
+    },
+    {
+      "question_id": "BEN018",
+      "text": "What is your favorite restaurant type?"
+    },
+    {
+      "question_id": "BEN019",
+      "text": "How often do you travel for leisure?"
+    },
+    {
+      "question_id": "BEN020",
+      "text": "What is your dream vacation destination?"
+    },
+    {
+      "question_id": "BEN021",
+      "text": "Do you prefer domestic or international travel?"
+    },
+    {
+      "question_id": "BEN022",
+      "text": "How do you prefer to travel (plane, car, train)?"
+    },
+    {
+      "question_id": "BEN023",
+      "text": "Do you enjoy gardening?"
+    },
+    {
+      "question_id": "BEN024",
+      "text": "Do you have any hobbies? Please describe."
+    },
+    {
+      "question_id": "BEN025",
+      "text": "Do you play any musical instruments?"
+    },
+    {
+      "question_id": "BEN026",
+      "text": "Do you enjoy art or creative activities?"
+    },
+    {
+      "question_id": "BEN027",
+      "text": "How often do you read for pleasure?"
+    },
+    {
+      "question_id": "BEN028",
+      "text": "What is your favorite book genre?"
+    },
+    {
+      "question_id": "BEN029",
+      "text": "Do you prefer fiction or non-fiction?"
+    },
+    {
+      "question_id": "BEN030",
+      "text": "Do you listen to podcasts regularly?"
+    },
+    {
+      "question_id": "BEN031",
+      "text": "What types of podcasts do you listen to?"
+    },
+    {
+      "question_id": "BEN032",
+      "text": "Do you enjoy board games or video games?"
+    },
+    {
+      "question_id": "BEN033",
+      "text": "Do you prefer solo activities or group activities?"
+    },
+    {
+      "question_id": "BEN034",
+      "text": "Do you enjoy sports? Which ones?"
+    },
+    {
+      "question_id": "BEN035",
+      "text": "Do you follow any professional sports teams?"
+    },
+    {
+      "question_id": "BEN036",
+      "text": "How would you describe your fashion style?"
+    },
+    {
+      "question_id": "BEN037",
+      "text": "How important is keeping up with fashion trends to you?"
+    },
+    {
+      "question_id": "BEN038",
+      "text": "Do you prefer city life or rural living?"
+    },
+    {
+      "question_id": "BEN039",
+      "text": "What type of home environment do you prefer?"
+    },
+    {
+      "question_id": "BEN040",
+      "text": "How important is being close to nature to you?"
+    },
+    {
+      "question_id": "BEN041",
+      "text": "Do you enjoy cooking? How often do you cook at home?"
+    },
+    {
+      "question_id": "BEN042",
+      "text": "What is your favorite meal of the day?"
+    },
+    {
+      "question_id": "BEN043",
+      "text": "Do you follow a specific diet by choice (vegetarian, vegan, etc.)?"
+    },
+    {
+      "question_id": "BEN044",
+      "text": "How important is healthy eating to you?"
+    },
+    {
+      "question_id": "BEN045",
+      "text": "How many cups of water do you drink daily?"
+    },
+    {
+      "question_id": "BEN046",
+      "text": "How do you typically unwind at the end of the day?"
+    },
+    {
+      "question_id": "BEN047",
+      "text": "Do you enjoy meditation or mindfulness practices?"
+    },
+    {
+      "question_id": "BEN048",
+      "text": "How would you rate your work-life balance?"
+    },
+    {
+      "question_id": "BEN049",
+      "text": "How many hours per day do you spend on social media?"
+    },
+    {
+      "question_id": "BEN050",
+      "text": "Which social media platforms do you use most?"
+    },
+    {
+      "question_id": "BEN051",
+      "text": "How do you feel about social media's impact on society?"
+    },
+    {
+      "question_id": "BEN052",
+      "text": "Do you prefer texting or phone calls to communicate?"
+    },
+    {
+      "question_id": "BEN053",
+      "text": "How comfortable are you with new technology?"
+    },
+    {
+      "question_id": "BEN054",
+      "text": "Do you enjoy trying new things or prefer routines?"
+    },
+    {
+      "question_id": "BEN055",
+      "text": "How would you describe your personality?"
+    },
+    {
+      "question_id": "BEN056",
+      "text": "What motivates you most in life?"
+    },
+    {
+      "question_id": "BEN057",
+      "text": "What are your most important personal values?"
+    },
+    {
+      "question_id": "BEN058",
+      "text": "How do you define success?"
+    },
+    {
+      "question_id": "BEN059",
+      "text": "What are your long-term life goals?"
+    },
+    {
+      "question_id": "BEN060",
+      "text": "How important is financial security to you?"
+    },
+    {
+      "question_id": "BEN061",
+      "text": "Do you prefer working independently or in a team?"
+    },
+    {
+      "question_id": "BEN062",
+      "text": "What type of work environment do you thrive in?"
+    },
+    {
+      "question_id": "BEN063",
+      "text": "Do you enjoy learning new skills?"
+    },
+    {
+      "question_id": "BEN064",
+      "text": "What subject areas interest you most?"
+    },
+    {
+      "question_id": "BEN065",
+      "text": "Do you enjoy attending live events (concerts, sports, etc.)?"
+    },
+    {
+      "question_id": "BEN066",
+      "text": "How often do you attend cultural events such as museums or art galleries?"
+    },
+    {
+      "question_id": "BEN067",
+      "text": "Do you enjoy volunteering or community service?"
+    },
+    {
+      "question_id": "BEN068",
+      "text": "How important is giving back to your community?"
+    },
+    {
+      "question_id": "BEN069",
+      "text": "Do you have pets? If so, what kind?"
+    },
+    {
+      "question_id": "BEN070",
+      "text": "Do you prefer cats or dogs?"
+    },
+    {
+      "question_id": "BEN071",
+      "text": "How do you feel about the current state of environmental sustainability?"
+    },
+    {
+      "question_id": "BEN072",
+      "text": "How do you personally try to reduce your environmental impact?"
+    },
+    {
+      "question_id": "BEN073",
+      "text": "Do you consider yourself environmentally conscious?"
+    },
+    {
+      "question_id": "BEN074",
+      "text": "How important is sustainability in your purchasing decisions?"
+    },
+    {
+      "question_id": "BEN075",
+      "text": "How often do you shop for new clothing?"
+    },
+    {
+      "question_id": "BEN076",
+      "text": "Do you prefer shopping online or in-store?"
+    },
+    {
+      "question_id": "BEN077",
+      "text": "How do you feel about online shopping compared to five years ago?"
+    },
+    {
+      "question_id": "BEN078",
+      "text": "What factors are most important when making a purchase decision?"
+    },
+    {
+      "question_id": "BEN079",
+      "text": "How would you describe your spending habits?"
+    },
+    {
+      "question_id": "BEN080",
+      "text": "Do you consider yourself a saver or a spender?"
+    },
+    {
+      "question_id": "BEN081",
+      "text": "What types of content do you consume most online?"
+    },
+    {
+      "question_id": "BEN082",
+      "text": "Do you create any online content yourself?"
+    },
+    {
+      "question_id": "BEN083",
+      "text": "What technology would you say you cannot live without?"
+    },
+    {
+      "question_id": "BEN084",
+      "text": "How do you feel about artificial intelligence?"
+    },
+    {
+      "question_id": "BEN085",
+      "text": "How do you feel about remote work?"
+    },
+    {
+      "question_id": "BEN086",
+      "text": "Do you prefer remote, hybrid, or in-office work?"
+    },
+    {
+      "question_id": "BEN087",
+      "text": "How satisfied are you with your current lifestyle overall?"
+    },
+    {
+      "question_id": "BEN088",
+      "text": "What one change would most improve your daily life?"
+    },
+    {
+      "question_id": "BEN089",
+      "text": "How do you feel about the pace of change in society today?"
+    },
+    {
+      "question_id": "BEN090",
+      "text": "What do you think is the most important issue facing society?"
+    },
+    {
+      "question_id": "BEN091",
+      "text": "How optimistic are you about the future?"
+    },
+    {
+      "question_id": "BEN092",
+      "text": "What brings you the most joy in everyday life?"
+    },
+    {
+      "question_id": "BEN093",
+      "text": "How important is humor to you in your daily life?"
+    },
+    {
+      "question_id": "BEN094",
+      "text": "Do you consider yourself a spiritual person?"
+    },
+    {
+      "question_id": "BEN095",
+      "text": "How do you prefer to handle conflict?"
+    },
+    {
+      "question_id": "BEN096",
+      "text": "How do you feel about public speaking?"
+    },
+    {
+      "question_id": "BEN097",
+      "text": "What kind of leadership style do you prefer in a workplace?"
+    },
+    {
+      "question_id": "BEN098",
+      "text": "How do you prefer to receive feedback?"
+    },
+    {
+      "question_id": "BEN099",
+      "text": "What is your preferred learning style?"
+    },
+    {
+      "question_id": "BEN100",
+      "text": "What does a perfect day look like to you?"
+    }
+  ]
+}

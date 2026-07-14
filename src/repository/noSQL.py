@@ -1,3 +1,5 @@
+# src/repository/noSQL.py
+
 """
 noSQL.py
 Generic document-based NoSQL adapter for the survey pipeline.

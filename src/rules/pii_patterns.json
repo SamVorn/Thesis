@@ -1,8 +1,20 @@
 {
-  "EMAIL": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
-  "PHONE": "\\b\\d{3}[-.]?\\d{3}[-.]?\\d{4}\\b",
-  "ADDRESS": "\\b\\d{1,5}\\s+[A-Za-z0-9\\s]+(Street|St|Rd|Road|Ave|Avenue|Blvd|Lane|Ln|Dr|Drive|Ct|Court|Way|Pl|Place|Pkwy|Parkway)\\b",
-  "NAME_KEYWORD": "\\b(name|full name|your name)\\b",
-  "DATE": "\\b(\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}|\\d{4}-\\d{2}-\\d{2}(?: \\d{2}:\\d{2}:\\d{2})?)\\b"
-
+  "EMAIL":              "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+  "PHONE":              "\\b(\\+?1[-.]?)?\\(?\\d{3}\\)?[-.]?\\d{3}[-.]?\\d{4}\\b",
+  "ADDRESS":            "\\b\\d{1,5}\\s+[A-Za-z0-9\\s]+(Street|St|Rd|Road|Ave|Avenue|Blvd|Boulevard|Lane|Ln|Dr|Drive|Ct|Court|Way|Pl|Place|Pkwy|Parkway|Terrace|Ter|Circle|Cir|Highway|Hwy)\\b",
+  "ZIP_CODE":           "\\b\\d{5}(-\\d{4})?\\b",
+  "DATE":               "\\b(\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}|\\d{4}-\\d{2}-\\d{2}(?: \\d{2}:\\d{2}:\\d{2})?)\\b",
+  "DATE_KEYWORD":       "\\b(date of birth|dob|birth ?date|birthday|born on|date of marriage|divorce date|date of retirement|graduation year|year of graduation)\\b",
+  "NAME_KEYWORD":       "\\b(full (legal )?name|first name|last name|middle name|maiden name|preferred name|nickname|legal name|your name|spouse.?s name|partner.?s name|children.?s names?|child.?s name|beneficiary.?s name|next of kin|guardian.?s name|parent.?s name|sibling.?s name|emergency contact.?s name|physician.?s name|physician|primary care|manager.?s name|supervisor.?s name|attorney.?s name|probation officer.?s name|landlord.?s name|teacher.?s name|proxy.?s name|members of your household|household members|other members)\\b",
+  "SSN":                "\\b\\d{3}[-]?\\d{2}[-]?\\d{4}\\b",
+  "GOVERNMENT_ID":      "\\b(driver.?s license|passport (number|no)|national id|visa number|immigration status|veteran id|military (service )?number|employee id|student id|medicare (number|id)|medicaid (number|id)|tax (id|identification)|tin\\b|ein\\b|routing number|policy number|insurance (member )?id|health insurance id|member id|professional license (number)?|social security (number|no)?|ssn\\b)\\b",
+  "FINANCIAL":          "\\b(bank account|account number|credit card|routing number|net worth|annual income|household income|monthly (mortgage|rent|payment)|investment portfolio|credit score|bankruptcy|financial account|debit card|iban|swift)\\b",
+  "LOCATION":           "\\b(current (city|location|address|zip)|city (you )?live|home (city|town|state|country)|country of (residence|citizenship|origin)|place of birth|birthplace|gps location|ip address|time zone|postal code|zip code|state (you )?live|reside in)\\b",
+  "HEALTH":             "\\b(diagnosis|diagnosed with|medical condition|chronic illness|cancer|diabetes|hypertension|heart (attack|condition|disease)|stroke|mental health|depression|anxiety|bipolar|schizophrenia|eating disorder|adhd|autism|epilepsy|seizure|multiple sclerosis|parkinson|alzheimer|dementia|hiv|aids|hepatitis|tuberculosis|autoimmune|crohn|colitis|celiac|allergy|allergies|medication|prescription|surgery|hospitalized|chemotherapy|radiation|pregnant|pregnancy|miscarriage|fertility|abortion|bmi|blood (type|pressure|glucose|test)|cholesterol|disability|assistive device|wheelchair|pacemaker|transplant|genetic (test|condition|disorder)|self.?harm|suicidal|psychiatric|therapy|rehab|substance use|overdose|chronic pain|fibromyalgia|sleep apnea|insomnia|thyroid|osteoporosis|kidney|liver|blood disorder|anemia|hemophilia|eczema|psoriasis|vaccine|vaccination|clinical trial|advance directive|living will|healthcare proxy|end.?of.?life)\\b",
+  "BIOMETRIC":          "\\b(fingerprint|face id|facial recognition|biometric|retina|iris scan|dna|genetic data|voice recognition|biometric (id|data|identifier|enrollment))\\b",
+  "ONLINE_IDENTIFIER":  "\\b(username|online handle|ip address|social media (handle|profile|username|url)|linkedin (url|profile)|facebook (username|profile)|twitter.{0,3}handle|instagram username|tiktok username|skype|whatsapp|venmo|paypal (username|account)|crypto(currency)? wallet|website url|blog url|personal website|online profile|gps location)\\b",
+  "DEMOGRAPHIC":        "\\b(ethnicity|race|nationality|country of origin|religion|religious affiliation|political (party|affiliation|opinion)|sexual orientation|gender identity|immigration status|visa status|citizenship|military (status|service|branch)|veteran status|union membership|marital status|relationship status|divorce|household size|household members)\\b",
+  "CRIMINAL":           "\\b(criminal record|arrested|arrest|conviction|convicted|felony|misdemeanor|probation|parole|bankruptcy|filed for bankruptcy)\\b",
+  "VEHICLE":            "\\b(license plate|vehicle (registration|identification|vin|make|model)|registration number|vin\\b)\\b",
+  "CONTACT_KEYWORD":    "\\b(emergency contact|next of kin|phone number|mobile (number|phone)|home phone|work (phone|email|address)|secondary (email|phone)|contact (information|info|number|details))\\b"
 }

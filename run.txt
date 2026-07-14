@@ -1,0 +1,30 @@
+1. navigate to src/docker
+2. run: docker-compose up -d
+3. verify containers are running: docker ps
+4. apply SQL schema: Get-Content sql_schema.sql | docker exec -i thesis_postgres psql -U thesis -d thesis_pipeline
+5. seed surveys
+5a. python seed_from_file.py --questions ../tests/test_dataset/pii_questions.json --db mongo --survey-id survey_pii --count 1 --no-confirm
+    python seed_from_file.py --questions ../tests/test_dataset/medical_questions.json --db mongo --survey-id survey_med --count 1 --no-confirm
+    python seed_from_file.py --questions ../tests/test_dataset/benign_questions.json  --db mongo --survey-id survey_ben --count 1 --no-confirm
+6. Verify data landed in mongo
+6a. docker exec -it thesis_mongo mongosh
+    use thesis_pipeline
+    db.surveys.find({}, {survey_id: 1}).pretty()
+    db.responses.countDocuments({survey_id: "survey_pii"})
+7. run pipeline
+7a. python test_pipeline.py --source mongo --survey-id survey_pii --no-confirm
+        python test_pipeline.py --source mongo --survey-id survey_pii --detector regex --no-confirm
+        python test_pipeline.py --source mongo --survey-id survey_pii --detector ai --no-confirm
+        python test_pipeline.py --source mongo --survey-id survey_pii --detector hybrid --no-confirm
+    python test_pipeline.py --source mongo --survey-id survey_med --no-confirm
+        python test_pipeline.py --source mongo --survey-id survey_med --detector regex --no-confirm
+        python test_pipeline.py --source mongo --survey-id survey_med --detector ai --no-confirm
+        python test_pipeline.py --source mongo --survey-id survey_med --detector hybrid --no-confirm
+    python test_pipeline.py --source mongo --survey-id survey_ben --no-confirm
+        python test_pipeline.py --source mongo --survey-id survey_ben --detector regex --no-confirm
+        python test_pipeline.py --source mongo --survey-id survey_ben --detector ai --no-confirm
+        python test_pipeline.py --source mongo --survey-id survey_ben --detector hybrid --no-confirm
+8. verify detection results storage
+8a. docker exec -it thesis_mongo mongosh
+    use thesis_pipeline
+    db.detection_results.find({}, {survey_id: 1, detector_type: 1, run_timestamp: 1}).pretty()

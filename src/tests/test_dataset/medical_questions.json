@@ -1,0 +1,405 @@
+{
+  "survey_id": "survey_med",
+  "questions": [
+    {
+      "question_id": "MED001",
+      "text": "What is your primary medical diagnosis?"
+    },
+    {
+      "question_id": "MED002",
+      "text": "Do you have any chronic illnesses? If so, please list them."
+    },
+    {
+      "question_id": "MED003",
+      "text": "Have you ever been diagnosed with cancer? If yes, what type?"
+    },
+    {
+      "question_id": "MED004",
+      "text": "Do you have diabetes? What type?"
+    },
+    {
+      "question_id": "MED005",
+      "text": "Do you have hypertension (high blood pressure)?"
+    },
+    {
+      "question_id": "MED006",
+      "text": "Have you ever had a heart attack or stroke?"
+    },
+    {
+      "question_id": "MED007",
+      "text": "Do you have a history of cardiovascular disease?"
+    },
+    {
+      "question_id": "MED008",
+      "text": "Do you have any autoimmune conditions?"
+    },
+    {
+      "question_id": "MED009",
+      "text": "Have you been diagnosed with any mental health conditions?"
+    },
+    {
+      "question_id": "MED010",
+      "text": "Are you currently receiving psychiatric care?"
+    },
+    {
+      "question_id": "MED011",
+      "text": "What medications are you currently taking?"
+    },
+    {
+      "question_id": "MED012",
+      "text": "Do you have any known drug allergies?"
+    },
+    {
+      "question_id": "MED013",
+      "text": "Do you have any food allergies?"
+    },
+    {
+      "question_id": "MED014",
+      "text": "Do you have any environmental allergies?"
+    },
+    {
+      "question_id": "MED015",
+      "text": "What is your blood type?"
+    },
+    {
+      "question_id": "MED016",
+      "text": "Have you ever had surgery? If yes, what kind?"
+    },
+    {
+      "question_id": "MED017",
+      "text": "Have you ever been hospitalized? How many times?"
+    },
+    {
+      "question_id": "MED018",
+      "text": "Do you have a family history of heart disease?"
+    },
+    {
+      "question_id": "MED019",
+      "text": "Do you have a family history of cancer?"
+    },
+    {
+      "question_id": "MED020",
+      "text": "Do you have a family history of diabetes?"
+    },
+    {
+      "question_id": "MED021",
+      "text": "Do you have a family history of mental illness?"
+    },
+    {
+      "question_id": "MED022",
+      "text": "How many times have you been pregnant?"
+    },
+    {
+      "question_id": "MED023",
+      "text": "Have you experienced any miscarriages?"
+    },
+    {
+      "question_id": "MED024",
+      "text": "Do you have any reproductive health conditions?"
+    },
+    {
+      "question_id": "MED025",
+      "text": "Are you currently pregnant?"
+    },
+    {
+      "question_id": "MED026",
+      "text": "Are you breastfeeding?"
+    },
+    {
+      "question_id": "MED027",
+      "text": "Do you smoke or use tobacco products?"
+    },
+    {
+      "question_id": "MED028",
+      "text": "How many cigarettes do you smoke per day?"
+    },
+    {
+      "question_id": "MED029",
+      "text": "Do you consume alcohol? How frequently?"
+    },
+    {
+      "question_id": "MED030",
+      "text": "How many alcoholic drinks do you have per week?"
+    },
+    {
+      "question_id": "MED031",
+      "text": "Have you ever used recreational drugs?"
+    },
+    {
+      "question_id": "MED032",
+      "text": "Are you currently in recovery from substance use?"
+    },
+    {
+      "question_id": "MED033",
+      "text": "Do you have a history of eating disorders?"
+    },
+    {
+      "question_id": "MED034",
+      "text": "Have you ever been treated for depression?"
+    },
+    {
+      "question_id": "MED035",
+      "text": "Have you ever been treated for anxiety?"
+    },
+    {
+      "question_id": "MED036",
+      "text": "Have you ever been hospitalized for a mental health crisis?"
+    },
+    {
+      "question_id": "MED037",
+      "text": "Have you ever attempted self-harm?"
+    },
+    {
+      "question_id": "MED038",
+      "text": "Are you currently experiencing suicidal thoughts?"
+    },
+    {
+      "question_id": "MED039",
+      "text": "Do you have a disability? If yes, please describe."
+    },
+    {
+      "question_id": "MED040",
+      "text": "Do you use any assistive devices?"
+    },
+    {
+      "question_id": "MED041",
+      "text": "Have you been diagnosed with ADHD or ADD?"
+    },
+    {
+      "question_id": "MED042",
+      "text": "Have you been diagnosed with autism spectrum disorder?"
+    },
+    {
+      "question_id": "MED043",
+      "text": "Do you have any neurological conditions?"
+    },
+    {
+      "question_id": "MED044",
+      "text": "Have you ever had a seizure?"
+    },
+    {
+      "question_id": "MED045",
+      "text": "Do you have a history of migraines?"
+    },
+    {
+      "question_id": "MED046",
+      "text": "Do you have any vision impairments?"
+    },
+    {
+      "question_id": "MED047",
+      "text": "Do you have any hearing impairments?"
+    },
+    {
+      "question_id": "MED048",
+      "text": "Do you have any orthopedic conditions or injuries?"
+    },
+    {
+      "question_id": "MED049",
+      "text": "Have you ever had a bone fracture? Where?"
+    },
+    {
+      "question_id": "MED050",
+      "text": "Do you have arthritis?"
+    },
+    {
+      "question_id": "MED051",
+      "text": "Do you have osteoporosis?"
+    },
+    {
+      "question_id": "MED052",
+      "text": "Have you been tested for HIV/AIDS?"
+    },
+    {
+      "question_id": "MED053",
+      "text": "Do you have any sexually transmitted infections?"
+    },
+    {
+      "question_id": "MED054",
+      "text": "Have you been vaccinated for COVID-19?"
+    },
+    {
+      "question_id": "MED055",
+      "text": "Are your routine vaccinations up to date?"
+    },
+    {
+      "question_id": "MED056",
+      "text": "Do you have a pacemaker or implanted device?"
+    },
+    {
+      "question_id": "MED057",
+      "text": "Have you ever received a blood transfusion?"
+    },
+    {
+      "question_id": "MED058",
+      "text": "Have you ever donated an organ or blood?"
+    },
+    {
+      "question_id": "MED059",
+      "text": "Are you an organ donor?"
+    },
+    {
+      "question_id": "MED060",
+      "text": "Do you have a living will or advance directive?"
+    },
+    {
+      "question_id": "MED061",
+      "text": "What is your current BMI?"
+    },
+    {
+      "question_id": "MED062",
+      "text": "Have you undergone any weight loss procedures?"
+    },
+    {
+      "question_id": "MED063",
+      "text": "Do you follow any medically prescribed diet?"
+    },
+    {
+      "question_id": "MED064",
+      "text": "Do you have celiac disease or gluten intolerance?"
+    },
+    {
+      "question_id": "MED065",
+      "text": "Do you have lactose intolerance?"
+    },
+    {
+      "question_id": "MED066",
+      "text": "Do you have any kidney conditions?"
+    },
+    {
+      "question_id": "MED067",
+      "text": "Do you have any liver conditions?"
+    },
+    {
+      "question_id": "MED068",
+      "text": "Do you have any thyroid conditions?"
+    },
+    {
+      "question_id": "MED069",
+      "text": "Have you been diagnosed with sleep apnea?"
+    },
+    {
+      "question_id": "MED070",
+      "text": "Do you have any breathing difficulties or asthma?"
+    },
+    {
+      "question_id": "MED071",
+      "text": "Have you been diagnosed with COPD?"
+    },
+    {
+      "question_id": "MED072",
+      "text": "Do you have any skin conditions?"
+    },
+    {
+      "question_id": "MED073",
+      "text": "Have you been diagnosed with eczema or psoriasis?"
+    },
+    {
+      "question_id": "MED074",
+      "text": "Do you have any dental or oral health conditions?"
+    },
+    {
+      "question_id": "MED075",
+      "text": "Have you had your wisdom teeth removed?"
+    },
+    {
+      "question_id": "MED076",
+      "text": "Do you wear dentures or have implants?"
+    },
+    {
+      "question_id": "MED077",
+      "text": "Have you ever received chemotherapy or radiation?"
+    },
+    {
+      "question_id": "MED078",
+      "text": "Are you currently enrolled in any clinical trials?"
+    },
+    {
+      "question_id": "MED079",
+      "text": "Do you take any herbal supplements or vitamins regularly?"
+    },
+    {
+      "question_id": "MED080",
+      "text": "Have you ever had an adverse reaction to anesthesia?"
+    },
+    {
+      "question_id": "MED081",
+      "text": "How would you rate your overall physical health?"
+    },
+    {
+      "question_id": "MED082",
+      "text": "How would you rate your overall mental health?"
+    },
+    {
+      "question_id": "MED083",
+      "text": "Do you have access to regular healthcare?"
+    },
+    {
+      "question_id": "MED084",
+      "text": "How often do you see your primary care physician?"
+    },
+    {
+      "question_id": "MED085",
+      "text": "When was your last physical exam?"
+    },
+    {
+      "question_id": "MED086",
+      "text": "When was your last dental checkup?"
+    },
+    {
+      "question_id": "MED087",
+      "text": "When was your last eye exam?"
+    },
+    {
+      "question_id": "MED088",
+      "text": "Do you have any concerns about your current health?"
+    },
+    {
+      "question_id": "MED089",
+      "text": "What is your primary reason for seeking medical care today?"
+    },
+    {
+      "question_id": "MED090",
+      "text": "Are there any health conditions you are worried about developing?"
+    },
+    {
+      "question_id": "MED091",
+      "text": "How do you manage stress in your daily life?"
+    },
+    {
+      "question_id": "MED092",
+      "text": "How many hours of sleep do you get per night?"
+    },
+    {
+      "question_id": "MED093",
+      "text": "Do you experience chronic pain? Where and how severe?"
+    },
+    {
+      "question_id": "MED094",
+      "text": "Do you have any concerns about fertility?"
+    },
+    {
+      "question_id": "MED095",
+      "text": "Have you undergone genetic testing?"
+    },
+    {
+      "question_id": "MED096",
+      "text": "Do you have any known genetic conditions?"
+    },
+    {
+      "question_id": "MED097",
+      "text": "Have you been exposed to any occupational health hazards?"
+    },
+    {
+      "question_id": "MED098",
+      "text": "Do you have any concerns about environmental health risks?"
+    },
+    {
+      "question_id": "MED099",
+      "text": "Do you have a healthcare proxy or medical power of attorney assigned?"
+    },
+    {
+      "question_id": "MED100",
+      "text": "Have you discussed your end-of-life wishes with a healthcare provider?"
+    }
+  ]
+}

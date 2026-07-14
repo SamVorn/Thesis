@@ -1,0 +1,405 @@
+{
+  "survey_id": "survey_pii",
+  "questions": [
+    {
+      "question_id": "PII001",
+      "text": "What is your full legal name?"
+    },
+    {
+      "question_id": "PII002",
+      "text": "What is your date of birth?"
+    },
+    {
+      "question_id": "PII003",
+      "text": "What is your home address?"
+    },
+    {
+      "question_id": "PII004",
+      "text": "What is your email address?"
+    },
+    {
+      "question_id": "PII005",
+      "text": "What is your phone number?"
+    },
+    {
+      "question_id": "PII006",
+      "text": "What is your Social Security Number?"
+    },
+    {
+      "question_id": "PII007",
+      "text": "What is your driver's license number?"
+    },
+    {
+      "question_id": "PII008",
+      "text": "What is your passport number?"
+    },
+    {
+      "question_id": "PII009",
+      "text": "What is your mother's maiden name?"
+    },
+    {
+      "question_id": "PII010",
+      "text": "What is your place of birth?"
+    },
+    {
+      "question_id": "PII011",
+      "text": "What is your current employer?"
+    },
+    {
+      "question_id": "PII012",
+      "text": "What is your work address?"
+    },
+    {
+      "question_id": "PII013",
+      "text": "What is your work phone number?"
+    },
+    {
+      "question_id": "PII014",
+      "text": "What is your work email address?"
+    },
+    {
+      "question_id": "PII015",
+      "text": "What is your job title?"
+    },
+    {
+      "question_id": "PII016",
+      "text": "What is your annual income?"
+    },
+    {
+      "question_id": "PII017",
+      "text": "What is your bank account number?"
+    },
+    {
+      "question_id": "PII018",
+      "text": "What is your credit card number?"
+    },
+    {
+      "question_id": "PII019",
+      "text": "What is your marital status?"
+    },
+    {
+      "question_id": "PII020",
+      "text": "What is your spouse's name?"
+    },
+    {
+      "question_id": "PII021",
+      "text": "How many children do you have?"
+    },
+    {
+      "question_id": "PII022",
+      "text": "What are your children's names?"
+    },
+    {
+      "question_id": "PII023",
+      "text": "What is your nationality?"
+    },
+    {
+      "question_id": "PII024",
+      "text": "What is your country of origin?"
+    },
+    {
+      "question_id": "PII025",
+      "text": "What is your visa or immigration status?"
+    },
+    {
+      "question_id": "PII026",
+      "text": "What is your ethnicity?"
+    },
+    {
+      "question_id": "PII027",
+      "text": "What is your religion?"
+    },
+    {
+      "question_id": "PII028",
+      "text": "What political party do you belong to?"
+    },
+    {
+      "question_id": "PII029",
+      "text": "What is your sexual orientation?"
+    },
+    {
+      "question_id": "PII030",
+      "text": "What is your gender identity?"
+    },
+    {
+      "question_id": "PII031",
+      "text": "What is your height?"
+    },
+    {
+      "question_id": "PII032",
+      "text": "What is your weight?"
+    },
+    {
+      "question_id": "PII033",
+      "text": "What is your hair color?"
+    },
+    {
+      "question_id": "PII034",
+      "text": "What is your eye color?"
+    },
+    {
+      "question_id": "PII035",
+      "text": "What is your vehicle registration number?"
+    },
+    {
+      "question_id": "PII036",
+      "text": "What is your vehicle make and model?"
+    },
+    {
+      "question_id": "PII037",
+      "text": "What is your IP address?"
+    },
+    {
+      "question_id": "PII038",
+      "text": "What is your username or online handle?"
+    },
+    {
+      "question_id": "PII039",
+      "text": "What is your date of marriage?"
+    },
+    {
+      "question_id": "PII040",
+      "text": "What is your divorce date?"
+    },
+    {
+      "question_id": "PII041",
+      "text": "What is your educational background?"
+    },
+    {
+      "question_id": "PII042",
+      "text": "What institution did you graduate from?"
+    },
+    {
+      "question_id": "PII043",
+      "text": "What year did you graduate?"
+    },
+    {
+      "question_id": "PII044",
+      "text": "What is your student ID number?"
+    },
+    {
+      "question_id": "PII045",
+      "text": "What is your GPA?"
+    },
+    {
+      "question_id": "PII046",
+      "text": "What is your emergency contact's name?"
+    },
+    {
+      "question_id": "PII047",
+      "text": "What is your emergency contact's phone number?"
+    },
+    {
+      "question_id": "PII048",
+      "text": "What is your insurance policy number?"
+    },
+    {
+      "question_id": "PII049",
+      "text": "What is your Medicare or Medicaid number?"
+    },
+    {
+      "question_id": "PII050",
+      "text": "What is your tax identification number?"
+    },
+    {
+      "question_id": "PII051",
+      "text": "What is your current ZIP or postal code?"
+    },
+    {
+      "question_id": "PII052",
+      "text": "What city do you currently live in?"
+    },
+    {
+      "question_id": "PII053",
+      "text": "What country are you a citizen of?"
+    },
+    {
+      "question_id": "PII054",
+      "text": "What is your previous home address?"
+    },
+    {
+      "question_id": "PII055",
+      "text": "What is the name of your primary care physician?"
+    },
+    {
+      "question_id": "PII056",
+      "text": "What is your pharmacy name and location?"
+    },
+    {
+      "question_id": "PII057",
+      "text": "What is your nearest relative's contact information?"
+    },
+    {
+      "question_id": "PII058",
+      "text": "What is your LinkedIn profile URL?"
+    },
+    {
+      "question_id": "PII059",
+      "text": "What is your Facebook username?"
+    },
+    {
+      "question_id": "PII060",
+      "text": "What is your Twitter/X handle?"
+    },
+    {
+      "question_id": "PII061",
+      "text": "What is your Instagram username?"
+    },
+    {
+      "question_id": "PII062",
+      "text": "What is the name of your bank?"
+    },
+    {
+      "question_id": "PII063",
+      "text": "What type of bank accounts do you hold?"
+    },
+    {
+      "question_id": "PII064",
+      "text": "What is your monthly mortgage or rent payment?"
+    },
+    {
+      "question_id": "PII065",
+      "text": "What is your net worth?"
+    },
+    {
+      "question_id": "PII066",
+      "text": "Do you own or rent your home?"
+    },
+    {
+      "question_id": "PII067",
+      "text": "What is your home's assessed value?"
+    },
+    {
+      "question_id": "PII068",
+      "text": "What is your investment portfolio size?"
+    },
+    {
+      "question_id": "PII069",
+      "text": "What debts do you currently carry?"
+    },
+    {
+      "question_id": "PII070",
+      "text": "Do you have a criminal record?"
+    },
+    {
+      "question_id": "PII071",
+      "text": "Have you ever been arrested?"
+    },
+    {
+      "question_id": "PII072",
+      "text": "Have you ever filed for bankruptcy?"
+    },
+    {
+      "question_id": "PII073",
+      "text": "What is your credit score?"
+    },
+    {
+      "question_id": "PII074",
+      "text": "Who is your current health insurance provider?"
+    },
+    {
+      "question_id": "PII075",
+      "text": "What is your health insurance member ID?"
+    },
+    {
+      "question_id": "PII076",
+      "text": "What is the name of your employer's HR contact?"
+    },
+    {
+      "question_id": "PII077",
+      "text": "What is your employee ID number?"
+    },
+    {
+      "question_id": "PII078",
+      "text": "What is your professional license number (if applicable)?"
+    },
+    {
+      "question_id": "PII079",
+      "text": "What languages do you speak at home?"
+    },
+    {
+      "question_id": "PII080",
+      "text": "What is your household size?"
+    },
+    {
+      "question_id": "PII081",
+      "text": "What is your household's combined income?"
+    },
+    {
+      "question_id": "PII082",
+      "text": "Who are the other members of your household?"
+    },
+    {
+      "question_id": "PII083",
+      "text": "What is your relationship status?"
+    },
+    {
+      "question_id": "PII084",
+      "text": "What is your military service status?"
+    },
+    {
+      "question_id": "PII085",
+      "text": "What branch of the military did you serve in?"
+    },
+    {
+      "question_id": "PII086",
+      "text": "What is your veteran ID number?"
+    },
+    {
+      "question_id": "PII087",
+      "text": "What is your union membership status?"
+    },
+    {
+      "question_id": "PII088",
+      "text": "What professional associations are you a member of?"
+    },
+    {
+      "question_id": "PII089",
+      "text": "What is your date of retirement (if applicable)?"
+    },
+    {
+      "question_id": "PII090",
+      "text": "What is your pension or retirement fund provider?"
+    },
+    {
+      "question_id": "PII091",
+      "text": "What is your beneficiary's name?"
+    },
+    {
+      "question_id": "PII092",
+      "text": "What is your beneficiary's relationship to you?"
+    },
+    {
+      "question_id": "PII093",
+      "text": "What is your secondary email address?"
+    },
+    {
+      "question_id": "PII094",
+      "text": "What is your secondary phone number?"
+    },
+    {
+      "question_id": "PII095",
+      "text": "What device do you primarily use to access the internet?"
+    },
+    {
+      "question_id": "PII096",
+      "text": "What operating system does your primary device use?"
+    },
+    {
+      "question_id": "PII097",
+      "text": "What is your mobile carrier?"
+    },
+    {
+      "question_id": "PII098",
+      "text": "What is your current GPS location?"
+    },
+    {
+      "question_id": "PII099",
+      "text": "What time zone do you reside in?"
+    },
+    {
+      "question_id": "PII100",
+      "text": "What is your biometric data (fingerprint, face ID) enrollment status?"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Institutional/government IDs → always STRICT regardless of context
+Special categories (political, sexual orientation, gender, immigration) → STRICT due to harm risk not just re-ID risk
+Financial figures → STRICT if exact (net worth), MODERATE if generalizable (income bracket, portfolio size)
+Third-party names → STRICT, no exceptions
+Broad demographics and self-reported statuses → RELAXED
+Minors in particular get elevated protection
+
+
+Stigma/discrimination risk → STRICT (mental health, HIV, substance use, reproductive)
+Serious disease + treatment history → STRICT (cancer, cardiovascular, COPD, chemo)
+Common/lifestyle conditions → MODERATE or RELAXED depending on specificity
+Subjective self-ratings and opinions → RELAXED
+

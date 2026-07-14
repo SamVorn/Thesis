@@ -1,16 +1,4 @@
 # test_pipeline.py
-"""
-Unified pipeline test
-lets pray this actually works
-
-Usage:
-    python test_pipeline.py                     
-    python test_pipeline.py --source mongo
-    python test_pipeline.py --source sql
-    python test_pipeline.py --source file
-    python test_pipeline.py --source file --no-confirm
-    python test_pipeline.py --source file --no-ai
-"""
 
 import argparse
 import sys
@@ -78,7 +66,7 @@ def build_pipeline(backend: str, source, detector, extra):
         return DocumentAnonymizationPipeline(
             source=source,
             detector=detector,
-            output_collection=db.responses_anonymized,
+            db=db,
         )
 
     if backend == "sql":
@@ -101,9 +89,10 @@ def build_pipeline(backend: str, source, detector, extra):
 
 
 # printing results, self explanatory man come on
-def print_mongo_results(db, survey_id: str):
-    print("\n  Anonymized records (MongoDB → responses_anonymized):")
-    for record in db.responses_anonymized.find({"survey_id": survey_id}):
+def print_mongo_results(db, survey_id: str, detector_type: str):
+    collection_name = f"responses_anonymized_{detector_type}"
+    print(f"\n  Anonymized records (MongoDB → {collection_name}):")
+    for record in db[collection_name].find({"survey_id": survey_id}):
         print(f"    Respondent {record['_id']}:")
         for qid, val in record.get("answers", {}).items():
             print(f"      {qid}: {val!r}")
@@ -114,13 +103,14 @@ def print_mongo_results(db, survey_id: str):
         print(f"    {flag}")
 
 
-def print_sql_results(engine, survey_id: str):
+def print_sql_results(engine, survey_id: str, detector_type: str):
     from sqlalchemy import text
-    print("\n  Anonymized records (Postgres → survey_responses_anonymized):")
+    table = f"survey_responses_anonymized_{detector_type}"
+    print(f"\n  Anonymized records (Postgres → {table}):")
     with engine.connect() as conn:
         try:
             rows = conn.execute(
-                text("SELECT * FROM survey_responses_anonymized WHERE survey_id=:sid"),
+                text(f"SELECT * FROM {table} WHERE survey_id=:sid"),
                 {"sid": survey_id},
             ).fetchall()
             for row in rows:
@@ -129,14 +119,15 @@ def print_sql_results(engine, survey_id: str):
             print(f"    (could not query output table: {e})")
 
 
-def print_file_results():
+def print_file_results(detector_type: str = ""):
     import json
     from pathlib import Path
-    path = Path(FILE_OUTPUT)
+    suffix = f"_{detector_type}" if detector_type else ""
+    path = Path(FILE_OUTPUT.replace(".json", f"{suffix}.json"))
     if not path.exists():
         print("  (output file not found)")
         return
-    print(f"\n  Anonymized records (file → {FILE_OUTPUT}):")
+    print(f"\n  Anonymized records (file → {path}):")
     records = json.loads(path.read_text())
     for record in records:
         print(f"    Respondent {record['respondent_id']}:")
@@ -165,6 +156,12 @@ def main():
         "--source", choices=["mongo", "sql", "file"],
         help="Backend to use (skips interactive prompt)"
     )
+    # defaults to the hardcoded SURVEY_ID constant if not provided
+    parser.add_argument(
+        "--survey-id",
+        default=None,
+        help="Survey ID to run the pipeline against (default: uses SURVEY_ID constant)"
+    )
     parser.add_argument(
         "--no-confirm", action="store_true",
         help="Skip interactive strategy confirmation and use recommended strategies"
@@ -173,45 +170,80 @@ def main():
         "--no-ai", action="store_true",
         help="Skip Ollama AI layer and run static regex detection only"
     )
+    parser.add_argument(
+        "--detector", choices=["regex", "ai", "hybrid"], default="hybrid",
+        help="Detector to use: regex, ai, or hybrid (default: hybrid)"
+    )
+    # to Ollama per call. Default 20 works for llama3.1:8b. Reduce to 10
+    # if you still see truncated JSON on a slower machine.
+    parser.add_argument(
+        "--ai-batch-size", type=int, default=20,
+        help="Max fields per Ollama call for ai/hybrid detectors (default: 20)"
+    )
     args = parser.parse_args()
 
-    backend    = args.source or pick_backend()
-    do_confirm = not args.no_confirm
-    use_ai     = not args.no_ai
+    backend         = args.source or pick_backend()
+    do_confirm      = not args.no_confirm
+    detector_choice = args.detector
+    ai_batch_size   = args.ai_batch_size
 
-    print(f"\n  Backend : {backend.upper()}")
-    print(f"  AI layer: {'enabled (' + OLLAMA_MODEL + ')' if use_ai else 'disabled (--no-ai)'}")
-    print(f"  Confirm : {'interactive' if do_confirm else 'auto (--no-confirm)'}")
+    print(f"\n  Backend  : {backend.upper()}")
+    print(f"  Detector : {detector_choice.upper()}")
+    print(f"  Confirm  : {'interactive' if do_confirm else 'auto (--no-confirm)'}")
 
-    # detector
-    from src.anonymization.hybrid_detector import HybridDetector
-    from src.anonymization.ai_detector import AIDetector
+    if detector_choice == "regex":
+        # regex only — no Ollama dependency
+        from src.anonymization.detector import PIIDetector
+        detector = PIIDetector(patterns_path=RULES_PATH)
 
-    if use_ai:
-        ai = AIDetector(model=OLLAMA_MODEL)
-        if not ai.is_available():
+    elif detector_choice == "ai":
+        # AI only — Ollama required
+        from src.anonymization.ai_detector import AIDetector
+        detector = AIDetector(model=OLLAMA_MODEL, batch_size=ai_batch_size)
+        if not detector.is_available():
             print(
-                "\n  WARNING: Ollama is not reachable at http://localhost:11434."
-                "\n           Falling back to static-only detection."
-                "\n           To enable AI: run `ollama serve` then `ollama pull llama3.1:8b`\n"
+                "\n  ERROR: Ollama is not reachable at http://localhost:11434."
+                "\n         The ai detector requires Ollama to be running."
+                "\n         Start it with: ollama serve\n"
             )
-            use_ai = False
+            sys.exit(1)
 
-    detector = HybridDetector(
-        patterns_path=RULES_PATH,
-        use_ai=use_ai,
-        model=OLLAMA_MODEL,
-    )
+    else:
+        # hybrid — regex + AI, falls back to regex if Ollama unavailable
+        from src.anonymization.hybrid_detector import HybridDetector
+        from src.anonymization.ai_detector import AIDetector
+        use_ai = not args.no_ai
+        if use_ai:
+      
+            _check = AIDetector(model=OLLAMA_MODEL, batch_size=ai_batch_size)
+            if not _check.is_available():
+                print(
+                    "\n  WARNING: Ollama is not reachable at http://localhost:11434."
+                    "\n           Running hybrid in regex-only mode."
+                    "\n           To enable AI: run `ollama serve` then `ollama pull llama3.1:8b`\n"
+                )
+                use_ai = False
+        # internal AIDetector instance also chunks correctly
+        detector = HybridDetector(
+            patterns_path=RULES_PATH,
+            use_ai=use_ai,
+            model=OLLAMA_MODEL,
+            batch_size=ai_batch_size,
+        )
 
     if backend == "mongo":
         source, extra = build_mongo_source()
-        survey_id     = SURVEY_ID
+
+        survey_id = args.survey_id or SURVEY_ID
     elif backend == "sql":
         source, extra = build_sql_source()
-        survey_id     = SURVEY_ID
+
+        survey_id = args.survey_id or SURVEY_ID
     else:
         source, extra = build_file_source()
         survey_id     = None   # file source ignores survey_id
+
+    print(f"  Survey  : {survey_id}")
 
     pipeline = build_pipeline(backend, source, detector, extra)
 
@@ -223,7 +255,6 @@ def main():
         print("  No fields found. Is the survey seeded?")
         sys.exit(0)
 
-    
     pipeline.review(analysis)
     if do_confirm:
         confirmed = pipeline.confirm(analysis)
@@ -238,11 +269,13 @@ def main():
     pipeline.run(survey_id, confirmed)
 
     if backend == "mongo":
-        print_mongo_results(extra, SURVEY_ID)
+  
+        print_mongo_results(extra, survey_id, detector_choice)
     elif backend == "sql":
-        print_sql_results(extra, SURVEY_ID)
+ 
+        print_sql_results(extra, survey_id, detector_choice)
     else:
-        print_file_results()
+        print_file_results(detector_choice)
 
     print("\n  Pipeline complete.\n")
 
