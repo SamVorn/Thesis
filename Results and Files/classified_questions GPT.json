@@ -1,0 +1,1802 @@
+[
+  {
+    "question_id": "BEN001",
+    "question_text": "What is your favorite color?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN002",
+    "question_text": "What type of music do you enjoy most?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN003",
+    "question_text": "What is your favorite genre of movies?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN004",
+    "question_text": "Do you prefer reading books or watching TV?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN005",
+    "question_text": "What is your favorite season of the year?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN006",
+    "question_text": "What type of cuisine do you enjoy most?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN007",
+    "question_text": "Do you prefer coffee or tea?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN008",
+    "question_text": "What is your favorite outdoor activity?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN009",
+    "question_text": "Do you consider yourself an introvert or extrovert?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN010",
+    "question_text": "How do you prefer to spend your weekends?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN011",
+    "question_text": "What is your favorite holiday?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN012",
+    "question_text": "Do you prefer mountains or beaches?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN013",
+    "question_text": "How many hours of TV do you watch per week?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN014",
+    "question_text": "What streaming services do you subscribe to?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN015",
+    "question_text": "What is your favorite type of exercise?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN016",
+    "question_text": "How often do you exercise per week?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN017",
+    "question_text": "Do you prefer cooking at home or eating out?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN018",
+    "question_text": "What is your favorite restaurant type?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN019",
+    "question_text": "How often do you travel for leisure?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN020",
+    "question_text": "What is your dream vacation destination?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN021",
+    "question_text": "Do you prefer domestic or international travel?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN022",
+    "question_text": "How do you prefer to travel (plane, car, train)?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN023",
+    "question_text": "Do you enjoy gardening?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN024",
+    "question_text": "Do you have any hobbies? Please describe.",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN025",
+    "question_text": "Do you play any musical instruments?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN026",
+    "question_text": "Do you enjoy art or creative activities?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN027",
+    "question_text": "How often do you read for pleasure?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN028",
+    "question_text": "What is your favorite book genre?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN029",
+    "question_text": "Do you prefer fiction or non-fiction?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN030",
+    "question_text": "Do you listen to podcasts regularly?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN031",
+    "question_text": "What types of podcasts do you listen to?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN032",
+    "question_text": "Do you enjoy board games or video games?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN033",
+    "question_text": "Do you prefer solo activities or group activities?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN034",
+    "question_text": "Do you enjoy sports? Which ones?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN035",
+    "question_text": "Do you follow any professional sports teams?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN036",
+    "question_text": "How would you describe your fashion style?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN037",
+    "question_text": "How important is keeping up with fashion trends to you?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN038",
+    "question_text": "Do you prefer city life or rural living?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN039",
+    "question_text": "What type of home environment do you prefer?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN040",
+    "question_text": "How important is being close to nature to you?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN041",
+    "question_text": "Do you enjoy cooking? How often do you cook at home?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN042",
+    "question_text": "What is your favorite meal of the day?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN043",
+    "question_text": "Do you follow a specific diet by choice (vegetarian, vegan, etc.)?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN044",
+    "question_text": "How important is healthy eating to you?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN045",
+    "question_text": "How many cups of water do you drink daily?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN046",
+    "question_text": "How do you typically unwind at the end of the day?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN047",
+    "question_text": "Do you enjoy meditation or mindfulness practices?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN048",
+    "question_text": "How would you rate your work-life balance?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN049",
+    "question_text": "How many hours per day do you spend on social media?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN050",
+    "question_text": "Which social media platforms do you use most?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN051",
+    "question_text": "How do you feel about social media's impact on society?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN052",
+    "question_text": "Do you prefer texting or phone calls to communicate?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN053",
+    "question_text": "How comfortable are you with new technology?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN054",
+    "question_text": "Do you enjoy trying new things or prefer routines?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN055",
+    "question_text": "How would you describe your personality?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN056",
+    "question_text": "What motivates you most in life?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN057",
+    "question_text": "What are your most important personal values?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN058",
+    "question_text": "How do you define success?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN059",
+    "question_text": "What are your long-term life goals?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN060",
+    "question_text": "How important is financial security to you?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN061",
+    "question_text": "Do you prefer working independently or in a team?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN062",
+    "question_text": "What type of work environment do you thrive in?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN063",
+    "question_text": "Do you enjoy learning new skills?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN064",
+    "question_text": "What subject areas interest you most?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN065",
+    "question_text": "Do you enjoy attending live events (concerts, sports, etc.)?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN066",
+    "question_text": "How often do you attend cultural events such as museums or art galleries?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN067",
+    "question_text": "Do you enjoy volunteering or community service?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN068",
+    "question_text": "How important is giving back to your community?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN069",
+    "question_text": "Do you have pets? If so, what kind?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN070",
+    "question_text": "Do you prefer cats or dogs?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN071",
+    "question_text": "How do you feel about the current state of environmental sustainability?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN072",
+    "question_text": "How do you personally try to reduce your environmental impact?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN073",
+    "question_text": "Do you consider yourself environmentally conscious?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN074",
+    "question_text": "How important is sustainability in your purchasing decisions?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN075",
+    "question_text": "How often do you shop for new clothing?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN076",
+    "question_text": "Do you prefer shopping online or in-store?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN077",
+    "question_text": "How do you feel about online shopping compared to five years ago?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN078",
+    "question_text": "What factors are most important when making a purchase decision?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN079",
+    "question_text": "How would you describe your spending habits?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN080",
+    "question_text": "Do you consider yourself a saver or a spender?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN081",
+    "question_text": "What types of content do you consume most online?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN082",
+    "question_text": "Do you create any online content yourself?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN083",
+    "question_text": "What technology would you say you cannot live without?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN084",
+    "question_text": "How do you feel about artificial intelligence?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN085",
+    "question_text": "How do you feel about remote work?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN086",
+    "question_text": "Do you prefer remote, hybrid, or in-office work?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN087",
+    "question_text": "How satisfied are you with your current lifestyle overall?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN088",
+    "question_text": "What one change would most improve your daily life?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN089",
+    "question_text": "How do you feel about the pace of change in society today?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN090",
+    "question_text": "What do you think is the most important issue facing society?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN091",
+    "question_text": "How optimistic are you about the future?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN092",
+    "question_text": "What brings you the most joy in everyday life?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN093",
+    "question_text": "How important is humor to you in your daily life?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN094",
+    "question_text": "Do you consider yourself a spiritual person?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN095",
+    "question_text": "How do you prefer to handle conflict?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN096",
+    "question_text": "How do you feel about public speaking?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN097",
+    "question_text": "What kind of leadership style do you prefer in a workplace?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN098",
+    "question_text": "How do you prefer to receive feedback?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN099",
+    "question_text": "What is your preferred learning style?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "BEN100",
+    "question_text": "What does a perfect day look like to you?",
+    "label": "NONE",
+    "reasoning": "This question asks about preferences, opinions, or behaviors that are not inherently identifying."
+  },
+  {
+    "question_id": "MED001",
+    "question_text": "What is your primary medical diagnosis?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED002",
+    "question_text": "Do you have any chronic illnesses? If so, please list them.",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED003",
+    "question_text": "Have you ever been diagnosed with cancer? If yes, what type?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED004",
+    "question_text": "Do you have diabetes? What type?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED005",
+    "question_text": "Do you have hypertension (high blood pressure)?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED006",
+    "question_text": "Have you ever had a heart attack or stroke?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED007",
+    "question_text": "Do you have a history of cardiovascular disease?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED008",
+    "question_text": "Do you have any autoimmune conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED009",
+    "question_text": "Have you been diagnosed with any mental health conditions?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED010",
+    "question_text": "Are you currently receiving psychiatric care?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED011",
+    "question_text": "What medications are you currently taking?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED012",
+    "question_text": "Do you have any known drug allergies?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED013",
+    "question_text": "Do you have any food allergies?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED014",
+    "question_text": "Do you have any environmental allergies?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED015",
+    "question_text": "What is your blood type?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED016",
+    "question_text": "Have you ever had surgery? If yes, what kind?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED017",
+    "question_text": "Have you ever been hospitalized? How many times?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED018",
+    "question_text": "Do you have a family history of heart disease?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED019",
+    "question_text": "Do you have a family history of cancer?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED020",
+    "question_text": "Do you have a family history of diabetes?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED021",
+    "question_text": "Do you have a family history of mental illness?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED022",
+    "question_text": "How many times have you been pregnant?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED023",
+    "question_text": "Have you experienced any miscarriages?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED024",
+    "question_text": "Do you have any reproductive health conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED025",
+    "question_text": "Are you currently pregnant?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED026",
+    "question_text": "Are you breastfeeding?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED027",
+    "question_text": "Do you smoke or use tobacco products?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED028",
+    "question_text": "How many cigarettes do you smoke per day?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED029",
+    "question_text": "Do you consume alcohol? How frequently?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED030",
+    "question_text": "How many alcoholic drinks do you have per week?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED031",
+    "question_text": "Have you ever used recreational drugs?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED032",
+    "question_text": "Are you currently in recovery from substance use?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED033",
+    "question_text": "Do you have a history of eating disorders?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED034",
+    "question_text": "Have you ever been treated for depression?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED035",
+    "question_text": "Have you ever been treated for anxiety?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED036",
+    "question_text": "Have you ever been hospitalized for a mental health crisis?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED037",
+    "question_text": "Have you ever attempted self-harm?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED038",
+    "question_text": "Are you currently experiencing suicidal thoughts?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED039",
+    "question_text": "Do you have a disability? If yes, please describe.",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED040",
+    "question_text": "Do you use any assistive devices?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED041",
+    "question_text": "Have you been diagnosed with ADHD or ADD?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED042",
+    "question_text": "Have you been diagnosed with autism spectrum disorder?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED043",
+    "question_text": "Do you have any neurological conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED044",
+    "question_text": "Have you ever had a seizure?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED045",
+    "question_text": "Do you have a history of migraines?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED046",
+    "question_text": "Do you have any vision impairments?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED047",
+    "question_text": "Do you have any hearing impairments?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED048",
+    "question_text": "Do you have any orthopedic conditions or injuries?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED049",
+    "question_text": "Have you ever had a bone fracture? Where?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED050",
+    "question_text": "Do you have arthritis?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED051",
+    "question_text": "Do you have osteoporosis?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED052",
+    "question_text": "Have you been tested for HIV/AIDS?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED053",
+    "question_text": "Do you have any sexually transmitted infections?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED054",
+    "question_text": "Have you been vaccinated for COVID-19?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED055",
+    "question_text": "Are your routine vaccinations up to date?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED056",
+    "question_text": "Do you have a pacemaker or implanted device?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED057",
+    "question_text": "Have you ever received a blood transfusion?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED058",
+    "question_text": "Have you ever donated an organ or blood?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED059",
+    "question_text": "Are you an organ donor?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED060",
+    "question_text": "Do you have a living will or advance directive?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED061",
+    "question_text": "What is your current BMI?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED062",
+    "question_text": "Have you undergone any weight loss procedures?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED063",
+    "question_text": "Do you follow any medically prescribed diet?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED064",
+    "question_text": "Do you have celiac disease or gluten intolerance?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED065",
+    "question_text": "Do you have lactose intolerance?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED066",
+    "question_text": "Do you have any kidney conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED067",
+    "question_text": "Do you have any liver conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED068",
+    "question_text": "Do you have any thyroid conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED069",
+    "question_text": "Have you been diagnosed with sleep apnea?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED070",
+    "question_text": "Do you have any breathing difficulties or asthma?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED071",
+    "question_text": "Have you been diagnosed with COPD?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED072",
+    "question_text": "Do you have any skin conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED073",
+    "question_text": "Have you been diagnosed with eczema or psoriasis?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED074",
+    "question_text": "Do you have any dental or oral health conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED075",
+    "question_text": "Have you had your wisdom teeth removed?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED076",
+    "question_text": "Do you wear dentures or have implants?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED077",
+    "question_text": "Have you ever received chemotherapy or radiation?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED078",
+    "question_text": "Are you currently enrolled in any clinical trials?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED079",
+    "question_text": "Do you take any herbal supplements or vitamins regularly?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED080",
+    "question_text": "Have you ever had an adverse reaction to anesthesia?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED081",
+    "question_text": "How would you rate your overall physical health?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED082",
+    "question_text": "How would you rate your overall mental health?",
+    "label": "MODERATE",
+    "reasoning": "This question concerns stigmatized mental health, substance use, self-harm, HIV/STI, or similar elevated-risk health information."
+  },
+  {
+    "question_id": "MED083",
+    "question_text": "Do you have access to regular healthcare?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED084",
+    "question_text": "How often do you see your primary care physician?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED085",
+    "question_text": "When was your last physical exam?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED086",
+    "question_text": "When was your last dental checkup?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED087",
+    "question_text": "When was your last eye exam?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED088",
+    "question_text": "Do you have any concerns about your current health?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED089",
+    "question_text": "What is your primary reason for seeking medical care today?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED090",
+    "question_text": "Are there any health conditions you are worried about developing?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED091",
+    "question_text": "How do you manage stress in your daily life?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED092",
+    "question_text": "How many hours of sleep do you get per night?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "This question concerns a common or lower-risk health or lifestyle-related medical topic that can be generalized."
+  },
+  {
+    "question_id": "MED093",
+    "question_text": "Do you experience chronic pain? Where and how severe?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED094",
+    "question_text": "Do you have any concerns about fertility?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED095",
+    "question_text": "Have you undergone genetic testing?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED096",
+    "question_text": "Do you have any known genetic conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED097",
+    "question_text": "Have you been exposed to any occupational health hazards?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED098",
+    "question_text": "Do you have any concerns about environmental health risks?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED099",
+    "question_text": "Do you have a healthcare proxy or medical power of attorney assigned?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "MED100",
+    "question_text": "Have you discussed your end-of-life wishes with a healthcare provider?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "This question requests health-condition, treatment, or medical-history information that is sensitive medical data."
+  },
+  {
+    "question_id": "PII001",
+    "question_text": "What is your full legal name?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII002",
+    "question_text": "What is your date of birth?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII003",
+    "question_text": "What is your home address?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII004",
+    "question_text": "What is your email address?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII005",
+    "question_text": "What is your phone number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII006",
+    "question_text": "What is your Social Security Number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII007",
+    "question_text": "What is your driver's license number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII008",
+    "question_text": "What is your passport number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII009",
+    "question_text": "What is your mother's maiden name?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII010",
+    "question_text": "What is your place of birth?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII011",
+    "question_text": "What is your current employer?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII012",
+    "question_text": "What is your work address?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII013",
+    "question_text": "What is your work phone number?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII014",
+    "question_text": "What is your work email address?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII015",
+    "question_text": "What is your job title?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII016",
+    "question_text": "What is your annual income?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII017",
+    "question_text": "What is your bank account number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII018",
+    "question_text": "What is your credit card number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII019",
+    "question_text": "What is your marital status?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII020",
+    "question_text": "What is your spouse's name?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII021",
+    "question_text": "How many children do you have?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII022",
+    "question_text": "What are your children's names?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII023",
+    "question_text": "What is your nationality?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII024",
+    "question_text": "What is your country of origin?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII025",
+    "question_text": "What is your visa or immigration status?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII026",
+    "question_text": "What is your ethnicity?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII027",
+    "question_text": "What is your religion?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII028",
+    "question_text": "What political party do you belong to?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII029",
+    "question_text": "What is your sexual orientation?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII030",
+    "question_text": "What is your gender identity?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII031",
+    "question_text": "What is your height?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII032",
+    "question_text": "What is your weight?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII033",
+    "question_text": "What is your hair color?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII034",
+    "question_text": "What is your eye color?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII035",
+    "question_text": "What is your vehicle registration number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII036",
+    "question_text": "What is your vehicle make and model?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII037",
+    "question_text": "What is your IP address?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII038",
+    "question_text": "What is your username or online handle?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII039",
+    "question_text": "What is your date of marriage?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII040",
+    "question_text": "What is your divorce date?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII041",
+    "question_text": "What is your educational background?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII042",
+    "question_text": "What institution did you graduate from?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII043",
+    "question_text": "What year did you graduate?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII044",
+    "question_text": "What is your student ID number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII045",
+    "question_text": "What is your GPA?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII046",
+    "question_text": "What is your emergency contact's name?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII047",
+    "question_text": "What is your emergency contact's phone number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII048",
+    "question_text": "What is your insurance policy number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII049",
+    "question_text": "What is your Medicare or Medicaid number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII050",
+    "question_text": "What is your tax identification number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII051",
+    "question_text": "What is your current ZIP or postal code?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII052",
+    "question_text": "What city do you currently live in?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII053",
+    "question_text": "What country are you a citizen of?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII054",
+    "question_text": "What is your previous home address?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII055",
+    "question_text": "What is the name of your primary care physician?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII056",
+    "question_text": "What is your pharmacy name and location?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII057",
+    "question_text": "What is your nearest relative's contact information?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII058",
+    "question_text": "What is your LinkedIn profile URL?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII059",
+    "question_text": "What is your Facebook username?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII060",
+    "question_text": "What is your Twitter/X handle?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII061",
+    "question_text": "What is your Instagram username?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII062",
+    "question_text": "What is the name of your bank?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII063",
+    "question_text": "What type of bank accounts do you hold?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII064",
+    "question_text": "What is your monthly mortgage or rent payment?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII065",
+    "question_text": "What is your net worth?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII066",
+    "question_text": "Do you own or rent your home?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII067",
+    "question_text": "What is your home's assessed value?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII068",
+    "question_text": "What is your investment portfolio size?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII069",
+    "question_text": "What debts do you currently carry?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII070",
+    "question_text": "Do you have a criminal record?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII071",
+    "question_text": "Have you ever been arrested?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII072",
+    "question_text": "Have you ever filed for bankruptcy?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII073",
+    "question_text": "What is your credit score?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII074",
+    "question_text": "Who is your current health insurance provider?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII075",
+    "question_text": "What is your health insurance member ID?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII076",
+    "question_text": "What is the name of your employer's HR contact?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII077",
+    "question_text": "What is your employee ID number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII078",
+    "question_text": "What is your professional license number (if applicable)?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII079",
+    "question_text": "What languages do you speak at home?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII080",
+    "question_text": "What is your household size?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII081",
+    "question_text": "What is your household's combined income?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII082",
+    "question_text": "Who are the other members of your household?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII083",
+    "question_text": "What is your relationship status?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII084",
+    "question_text": "What is your military service status?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII085",
+    "question_text": "What branch of the military did you serve in?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII086",
+    "question_text": "What is your veteran ID number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII087",
+    "question_text": "What is your union membership status?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII088",
+    "question_text": "What professional associations are you a member of?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII089",
+    "question_text": "What is your date of retirement (if applicable)?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII090",
+    "question_text": "What is your pension or retirement fund provider?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII091",
+    "question_text": "What is your beneficiary's name?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII092",
+    "question_text": "What is your beneficiary's relationship to you?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII093",
+    "question_text": "What is your secondary email address?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII094",
+    "question_text": "What is your secondary phone number?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII095",
+    "question_text": "What device do you primarily use to access the internet?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII096",
+    "question_text": "What operating system does your primary device use?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII097",
+    "question_text": "What is your mobile carrier?",
+    "label": "MODERATE",
+    "reasoning": "This question requests sensitive or indirectly identifying personal information that requires pseudonymization."
+  },
+  {
+    "question_id": "PII098",
+    "question_text": "What is your current GPS location?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  },
+  {
+    "question_id": "PII099",
+    "question_text": "What time zone do you reside in?",
+    "label": "RELAXED",
+    "reasoning": "This question collects demographic, socioeconomic, or descriptive information that should be generalized rather than retained verbatim."
+  },
+  {
+    "question_id": "PII100",
+    "question_text": "What is your biometric data (fingerprint, face ID) enrollment status?",
+    "label": "STRICT",
+    "reasoning": "This question solicits a direct identifier, account number, online identifier, precise location, or third-party identifying information."
+  }
+]

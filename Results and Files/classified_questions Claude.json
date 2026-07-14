@@ -1,0 +1,1802 @@
+[
+  {
+    "question_id": "PII001",
+    "question_text": "What is your full legal name?",
+    "label": "STRICT",
+    "reasoning": "Full legal name is a direct identifier enabling immediate re-identification."
+  },
+  {
+    "question_id": "PII002",
+    "question_text": "What is your date of birth?",
+    "label": "MODERATE",
+    "reasoning": "Date of birth is indirectly identifying and protected under CCPA/FCRA; requires pseudonymization."
+  },
+  {
+    "question_id": "PII003",
+    "question_text": "What is your home address?",
+    "label": "STRICT",
+    "reasoning": "Home address is a direct locating identifier enabling immediate re-identification."
+  },
+  {
+    "question_id": "PII004",
+    "question_text": "What is your email address?",
+    "label": "STRICT",
+    "reasoning": "Email address is a direct contact identifier equivalent to a name for re-identification purposes."
+  },
+  {
+    "question_id": "PII005",
+    "question_text": "What is your phone number?",
+    "label": "STRICT",
+    "reasoning": "Phone number is a direct contact identifier enabling immediate re-identification."
+  },
+  {
+    "question_id": "PII006",
+    "question_text": "What is your Social Security Number?",
+    "label": "STRICT",
+    "reasoning": "SSN is a government-issued ID number and is always STRICT per rule 3."
+  },
+  {
+    "question_id": "PII007",
+    "question_text": "What is your driver's license number?",
+    "label": "STRICT",
+    "reasoning": "Driver's license number is a government-issued ID and is always STRICT per rule 3."
+  },
+  {
+    "question_id": "PII008",
+    "question_text": "What is your passport number?",
+    "label": "STRICT",
+    "reasoning": "Passport number is a government-issued ID and is always STRICT per rule 3."
+  },
+  {
+    "question_id": "PII009",
+    "question_text": "What is your mother's maiden name?",
+    "label": "MODERATE",
+    "reasoning": "Mother's maiden name is a commonly used security/identity verification datum, indirectly identifying and protected."
+  },
+  {
+    "question_id": "PII010",
+    "question_text": "What is your place of birth?",
+    "label": "RELAXED",
+    "reasoning": "Place of birth is demographic/background information that is low-sensitivity and not directly identifying alone."
+  },
+  {
+    "question_id": "PII011",
+    "question_text": "What is your current employer?",
+    "label": "RELAXED",
+    "reasoning": "Current employer is a broad demographic/professional attribute useful for research but not directly identifying alone."
+  },
+  {
+    "question_id": "PII012",
+    "question_text": "What is your work address?",
+    "label": "MODERATE",
+    "reasoning": "Work address is an indirect locating identifier protected under privacy regulations; requires pseudonymization."
+  },
+  {
+    "question_id": "PII013",
+    "question_text": "What is your work phone number?",
+    "label": "STRICT",
+    "reasoning": "Work phone number is a direct contact identifier enabling re-identification."
+  },
+  {
+    "question_id": "PII014",
+    "question_text": "What is your work email address?",
+    "label": "STRICT",
+    "reasoning": "Work email address is a direct contact identifier enabling re-identification."
+  },
+  {
+    "question_id": "PII015",
+    "question_text": "What is your job title?",
+    "label": "RELAXED",
+    "reasoning": "Job title is a self-reported professional attribute that is low-sensitivity and broadly demographic."
+  },
+  {
+    "question_id": "PII016",
+    "question_text": "What is your annual income?",
+    "label": "RELAXED",
+    "reasoning": "Annual income as a general range is low-sensitivity demographic data appropriate for generalization/bucketing."
+  },
+  {
+    "question_id": "PII017",
+    "question_text": "What is your bank account number?",
+    "label": "STRICT",
+    "reasoning": "Bank account number is a financial account number and is always STRICT per rule 4."
+  },
+  {
+    "question_id": "PII018",
+    "question_text": "What is your credit card number?",
+    "label": "STRICT",
+    "reasoning": "Credit card number is a financial account number and is always STRICT per rule 4."
+  },
+  {
+    "question_id": "PII019",
+    "question_text": "What is your marital status?",
+    "label": "RELAXED",
+    "reasoning": "Marital status is a self-reported demographic attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII020",
+    "question_text": "What is your spouse's name?",
+    "label": "STRICT",
+    "reasoning": "Spouse's name is a third-party name implicating another person's identity and is always STRICT per rule 2."
+  },
+  {
+    "question_id": "PII021",
+    "question_text": "How many children do you have?",
+    "label": "RELAXED",
+    "reasoning": "Number of children is a general household demographic that is low-sensitivity and not directly identifying."
+  },
+  {
+    "question_id": "PII022",
+    "question_text": "What are your children's names?",
+    "label": "STRICT",
+    "reasoning": "Children's names are third-party names implicating minors' identities and are always STRICT per rule 2."
+  },
+  {
+    "question_id": "PII023",
+    "question_text": "What is your nationality?",
+    "label": "RELAXED",
+    "reasoning": "Nationality is a self-reported demographic attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII024",
+    "question_text": "What is your country of origin?",
+    "label": "RELAXED",
+    "reasoning": "Country of origin is a broad demographic attribute that is low-sensitivity and not directly identifying alone."
+  },
+  {
+    "question_id": "PII025",
+    "question_text": "What is your visa or immigration status?",
+    "label": "MODERATE",
+    "reasoning": "Visa/immigration status is indirectly identifying and sensitive; explicitly cited as a MODERATE example in the rubric."
+  },
+  {
+    "question_id": "PII026",
+    "question_text": "What is your ethnicity?",
+    "label": "RELAXED",
+    "reasoning": "Ethnicity is a self-reported demographic attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII027",
+    "question_text": "What is your religion?",
+    "label": "RELAXED",
+    "reasoning": "Religion is a self-reported demographic attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII028",
+    "question_text": "What political party do you belong to?",
+    "label": "RELAXED",
+    "reasoning": "Political party affiliation is a self-reported demographic/lifestyle attribute that is low-sensitivity individually."
+  },
+  {
+    "question_id": "PII029",
+    "question_text": "What is your sexual orientation?",
+    "label": "RELAXED",
+    "reasoning": "Sexual orientation is a self-reported demographic attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII030",
+    "question_text": "What is your gender identity?",
+    "label": "RELAXED",
+    "reasoning": "Gender identity is a self-reported demographic attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII031",
+    "question_text": "What is your height?",
+    "label": "RELAXED",
+    "reasoning": "Height is a self-reported physical attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII032",
+    "question_text": "What is your weight?",
+    "label": "RELAXED",
+    "reasoning": "Weight is a self-reported physical attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII033",
+    "question_text": "What is your hair color?",
+    "label": "RELAXED",
+    "reasoning": "Hair color is a self-reported physical attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII034",
+    "question_text": "What is your eye color?",
+    "label": "RELAXED",
+    "reasoning": "Eye color is a self-reported physical attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII035",
+    "question_text": "What is your vehicle registration number?",
+    "label": "STRICT",
+    "reasoning": "Vehicle registration number is a government-issued identifier that enables direct re-identification."
+  },
+  {
+    "question_id": "PII036",
+    "question_text": "What is your vehicle make and model?",
+    "label": "RELAXED",
+    "reasoning": "Vehicle make and model is a general descriptive attribute that is low-sensitivity and not directly identifying alone."
+  },
+  {
+    "question_id": "PII037",
+    "question_text": "What is your IP address?",
+    "label": "STRICT",
+    "reasoning": "IP address enables precise physical location and is always STRICT per rule 9."
+  },
+  {
+    "question_id": "PII038",
+    "question_text": "What is your username or online handle?",
+    "label": "MODERATE",
+    "reasoning": "Username/online handle is indirectly identifying and explicitly cited as a MODERATE example in the rubric."
+  },
+  {
+    "question_id": "PII039",
+    "question_text": "What is your date of marriage?",
+    "label": "MODERATE",
+    "reasoning": "Date of marriage is a personal life-event date that is indirectly identifying when combined with other fields."
+  },
+  {
+    "question_id": "PII040",
+    "question_text": "What is your divorce date?",
+    "label": "MODERATE",
+    "reasoning": "Divorce date is a sensitive personal life-event date that is indirectly identifying and potentially stigmatizing."
+  },
+  {
+    "question_id": "PII041",
+    "question_text": "What is your educational background?",
+    "label": "RELAXED",
+    "reasoning": "Educational background is a self-reported demographic attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII042",
+    "question_text": "What institution did you graduate from?",
+    "label": "RELAXED",
+    "reasoning": "Graduation institution is a self-reported educational attribute that is low-sensitivity demographic information."
+  },
+  {
+    "question_id": "PII043",
+    "question_text": "What year did you graduate?",
+    "label": "RELAXED",
+    "reasoning": "Graduation year is a low-sensitivity temporal attribute that can be generalized to a range."
+  },
+  {
+    "question_id": "PII044",
+    "question_text": "What is your student ID number?",
+    "label": "STRICT",
+    "reasoning": "Student ID number is a government/institution-issued ID and is always STRICT per rule 3."
+  },
+  {
+    "question_id": "PII045",
+    "question_text": "What is your GPA?",
+    "label": "MODERATE",
+    "reasoning": "GPA is an academic record protected under FERPA and is indirectly identifying when combined with institution."
+  },
+  {
+    "question_id": "PII046",
+    "question_text": "What is your emergency contact's name?",
+    "label": "STRICT",
+    "reasoning": "Emergency contact's name is a third-party name implicating another person's identity and is always STRICT per rule 2."
+  },
+  {
+    "question_id": "PII047",
+    "question_text": "What is your emergency contact's phone number?",
+    "label": "STRICT",
+    "reasoning": "Emergency contact's phone number is a third-party direct contact identifier and is STRICT per rule 2."
+  },
+  {
+    "question_id": "PII048",
+    "question_text": "What is your insurance policy number?",
+    "label": "STRICT",
+    "reasoning": "Insurance policy number is a quasi-government-issued account number enabling direct re-identification in health systems."
+  },
+  {
+    "question_id": "PII049",
+    "question_text": "What is your Medicare or Medicaid number?",
+    "label": "STRICT",
+    "reasoning": "Medicare/Medicaid number is a government-issued ID and is always STRICT per rule 3."
+  },
+  {
+    "question_id": "PII050",
+    "question_text": "What is your tax identification number?",
+    "label": "STRICT",
+    "reasoning": "Tax identification number is a government-issued ID and is always STRICT per rule 3."
+  },
+  {
+    "question_id": "PII051",
+    "question_text": "What is your current ZIP or postal code?",
+    "label": "MODERATE",
+    "reasoning": "Current ZIP/postal code is indirectly identifying and explicitly cited as a MODERATE example in the rubric."
+  },
+  {
+    "question_id": "PII052",
+    "question_text": "What city do you currently live in?",
+    "label": "RELAXED",
+    "reasoning": "City of residence is a broad geographic attribute explicitly listed as a RELAXED example in the rubric."
+  },
+  {
+    "question_id": "PII053",
+    "question_text": "What country are you a citizen of?",
+    "label": "RELAXED",
+    "reasoning": "Country of citizenship is a broad demographic attribute that is low-sensitivity and not directly identifying alone."
+  },
+  {
+    "question_id": "PII054",
+    "question_text": "What is your previous home address?",
+    "label": "STRICT",
+    "reasoning": "Previous home address extends re-identification risk temporally and is always STRICT per rule 10."
+  },
+  {
+    "question_id": "PII055",
+    "question_text": "What is the name of your primary care physician?",
+    "label": "STRICT",
+    "reasoning": "Primary care physician's name is a third-party name implicating another person's identity and is always STRICT per rule 2."
+  },
+  {
+    "question_id": "PII056",
+    "question_text": "What is your pharmacy name and location?",
+    "label": "MODERATE",
+    "reasoning": "Pharmacy name and location is indirectly identifying sensitive health-adjacent information requiring pseudonymization."
+  },
+  {
+    "question_id": "PII057",
+    "question_text": "What is your nearest relative's contact information?",
+    "label": "STRICT",
+    "reasoning": "Nearest relative's contact information includes third-party names and direct contact identifiers, always STRICT per rule 2."
+  },
+  {
+    "question_id": "PII058",
+    "question_text": "What is your LinkedIn profile URL?",
+    "label": "STRICT",
+    "reasoning": "LinkedIn profile URL is a social media profile URL and is always STRICT per rule 8."
+  },
+  {
+    "question_id": "PII059",
+    "question_text": "What is your Facebook username?",
+    "label": "STRICT",
+    "reasoning": "Facebook username is a social media handle and is always STRICT per rule 8."
+  },
+  {
+    "question_id": "PII060",
+    "question_text": "What is your Twitter/X handle?",
+    "label": "STRICT",
+    "reasoning": "Twitter/X handle is a social media handle and is always STRICT per rule 8."
+  },
+  {
+    "question_id": "PII061",
+    "question_text": "What is your Instagram username?",
+    "label": "STRICT",
+    "reasoning": "Instagram username is a social media handle and is always STRICT per rule 8."
+  },
+  {
+    "question_id": "PII062",
+    "question_text": "What is the name of your bank?",
+    "label": "MODERATE",
+    "reasoning": "Bank name is indirectly identifying financial institution information that narrows re-identification when combined with other data."
+  },
+  {
+    "question_id": "PII063",
+    "question_text": "What type of bank accounts do you hold?",
+    "label": "MODERATE",
+    "reasoning": "Type of bank accounts held is sensitive financial information protected under GLBA requiring pseudonymization."
+  },
+  {
+    "question_id": "PII064",
+    "question_text": "What is your monthly mortgage or rent payment?",
+    "label": "MODERATE",
+    "reasoning": "Monthly mortgage/rent payment is a financial figure explicitly cited as a MODERATE example in the rubric."
+  },
+  {
+    "question_id": "PII065",
+    "question_text": "What is your net worth?",
+    "label": "MODERATE",
+    "reasoning": "Net worth is a financial figure explicitly cited as a MODERATE example in the rubric."
+  },
+  {
+    "question_id": "PII066",
+    "question_text": "Do you own or rent your home?",
+    "label": "RELAXED",
+    "reasoning": "Own/rent status is a low-sensitivity housing demographic that can be generalized and is not directly identifying."
+  },
+  {
+    "question_id": "PII067",
+    "question_text": "What is your home's assessed value?",
+    "label": "MODERATE",
+    "reasoning": "Home assessed value is an indirectly identifying financial figure that narrows re-identification when combined with location."
+  },
+  {
+    "question_id": "PII068",
+    "question_text": "What is your investment portfolio size?",
+    "label": "MODERATE",
+    "reasoning": "Investment portfolio size is a sensitive financial figure protected under GLBA that is indirectly identifying."
+  },
+  {
+    "question_id": "PII069",
+    "question_text": "What debts do you currently carry?",
+    "label": "MODERATE",
+    "reasoning": "Current debts are sensitive financial information protected under GLBA/FCRA requiring pseudonymization."
+  },
+  {
+    "question_id": "PII070",
+    "question_text": "Do you have a criminal record?",
+    "label": "MODERATE",
+    "reasoning": "Criminal record status is indirectly identifying sensitive information explicitly cited as a MODERATE example in the rubric."
+  },
+  {
+    "question_id": "PII071",
+    "question_text": "Have you ever been arrested?",
+    "label": "MODERATE",
+    "reasoning": "Arrest history is sensitive legal/criminal information protected under FCRA that is indirectly identifying."
+  },
+  {
+    "question_id": "PII072",
+    "question_text": "Have you ever filed for bankruptcy?",
+    "label": "MODERATE",
+    "reasoning": "Bankruptcy history is sensitive financial/legal information protected under FCRA requiring pseudonymization."
+  },
+  {
+    "question_id": "PII073",
+    "question_text": "What is your credit score?",
+    "label": "MODERATE",
+    "reasoning": "Credit score is indirectly identifying financial information explicitly cited as a MODERATE example in the rubric."
+  },
+  {
+    "question_id": "PII074",
+    "question_text": "Who is your current health insurance provider?",
+    "label": "MODERATE",
+    "reasoning": "Health insurance provider name is sensitive health-adjacent financial information indirectly identifying when combined with other data."
+  },
+  {
+    "question_id": "PII075",
+    "question_text": "What is your health insurance member ID?",
+    "label": "STRICT",
+    "reasoning": "Health insurance member ID is an account/policy number that functions as a direct identifier within health systems."
+  },
+  {
+    "question_id": "PII076",
+    "question_text": "What is the name of your employer's HR contact?",
+    "label": "STRICT",
+    "reasoning": "Employer's HR contact name is a third-party name implicating another person's identity and is always STRICT per rule 2."
+  },
+  {
+    "question_id": "PII077",
+    "question_text": "What is your employee ID number?",
+    "label": "STRICT",
+    "reasoning": "Employee ID number is a workplace-issued identifier equivalent to a government ID and is always STRICT per rule 3."
+  },
+  {
+    "question_id": "PII078",
+    "question_text": "What is your professional license number (if applicable)?",
+    "label": "STRICT",
+    "reasoning": "Professional license number is a government-issued ID and is always STRICT per rule 3."
+  },
+  {
+    "question_id": "PII079",
+    "question_text": "What languages do you speak at home?",
+    "label": "RELAXED",
+    "reasoning": "Languages spoken at home is a self-reported demographic/cultural attribute that is low-sensitivity and broadly used in research."
+  },
+  {
+    "question_id": "PII080",
+    "question_text": "What is your household size?",
+    "label": "RELAXED",
+    "reasoning": "Household size is a general demographic attribute that is low-sensitivity and can be generalized to a range."
+  },
+  {
+    "question_id": "PII081",
+    "question_text": "What is your household's combined income?",
+    "label": "MODERATE",
+    "reasoning": "Household combined income is a financial figure that is indirectly identifying when combined with household size and location."
+  },
+  {
+    "question_id": "PII082",
+    "question_text": "Who are the other members of your household?",
+    "label": "STRICT",
+    "reasoning": "Other household members' identities are third-party names/identifiers implicating other people and are always STRICT per rule 2."
+  },
+  {
+    "question_id": "PII083",
+    "question_text": "What is your relationship status?",
+    "label": "RELAXED",
+    "reasoning": "Relationship status is a self-reported demographic attribute similar to marital status that is low-sensitivity."
+  },
+  {
+    "question_id": "PII084",
+    "question_text": "What is your military service status?",
+    "label": "RELAXED",
+    "reasoning": "Military service status is a self-reported background attribute that is low-sensitivity demographic information."
+  },
+  {
+    "question_id": "PII085",
+    "question_text": "What branch of the military did you serve in?",
+    "label": "RELAXED",
+    "reasoning": "Military branch served is a self-reported background attribute that is low-sensitivity demographic information."
+  },
+  {
+    "question_id": "PII086",
+    "question_text": "What is your veteran ID number?",
+    "label": "STRICT",
+    "reasoning": "Veteran ID number is a government-issued ID and is always STRICT per rule 3."
+  },
+  {
+    "question_id": "PII087",
+    "question_text": "What is your union membership status?",
+    "label": "RELAXED",
+    "reasoning": "Union membership status is a self-reported professional/affiliation attribute that is low-sensitivity demographic information."
+  },
+  {
+    "question_id": "PII088",
+    "question_text": "What professional associations are you a member of?",
+    "label": "RELAXED",
+    "reasoning": "Professional association memberships are self-reported affiliations that are low-sensitivity and broadly demographic."
+  },
+  {
+    "question_id": "PII089",
+    "question_text": "What is your date of retirement (if applicable)?",
+    "label": "MODERATE",
+    "reasoning": "Date of retirement is a specific personal life-event date that is indirectly identifying when combined with employer or age."
+  },
+  {
+    "question_id": "PII090",
+    "question_text": "What is your pension or retirement fund provider?",
+    "label": "MODERATE",
+    "reasoning": "Pension/retirement fund provider is sensitive financial information indirectly identifying when combined with employment history."
+  },
+  {
+    "question_id": "PII091",
+    "question_text": "What is your beneficiary's name?",
+    "label": "STRICT",
+    "reasoning": "Beneficiary's name is a third-party name implicating another person's identity and is always STRICT per rule 2."
+  },
+  {
+    "question_id": "PII092",
+    "question_text": "What is your beneficiary's relationship to you?",
+    "label": "RELAXED",
+    "reasoning": "Beneficiary's relationship (e.g., spouse, child) is a general relational category that is low-sensitivity without the name."
+  },
+  {
+    "question_id": "PII093",
+    "question_text": "What is your secondary email address?",
+    "label": "STRICT",
+    "reasoning": "Secondary email address is a direct contact identifier enabling re-identification just as a primary email would."
+  },
+  {
+    "question_id": "PII094",
+    "question_text": "What is your secondary phone number?",
+    "label": "STRICT",
+    "reasoning": "Secondary phone number is a direct contact identifier enabling re-identification just as a primary phone would."
+  },
+  {
+    "question_id": "PII095",
+    "question_text": "What device do you primarily use to access the internet?",
+    "label": "NONE",
+    "reasoning": "Primary device type is a general technology preference with essentially no privacy risk alone."
+  },
+  {
+    "question_id": "PII096",
+    "question_text": "What operating system does your primary device use?",
+    "label": "NONE",
+    "reasoning": "Operating system preference is a general technology attribute with essentially no privacy risk individually."
+  },
+  {
+    "question_id": "PII097",
+    "question_text": "What is your mobile carrier?",
+    "label": "RELAXED",
+    "reasoning": "Mobile carrier is a service-provider attribute that is low-sensitivity but could contribute to re-identification in combination."
+  },
+  {
+    "question_id": "PII098",
+    "question_text": "What is your current GPS location?",
+    "label": "STRICT",
+    "reasoning": "GPS location enables precise physical location of the individual and is always STRICT per rule 9."
+  },
+  {
+    "question_id": "PII099",
+    "question_text": "What time zone do you reside in?",
+    "label": "NONE",
+    "reasoning": "Time zone is a very coarse geographic attribute with essentially zero individual privacy risk."
+  },
+  {
+    "question_id": "PII100",
+    "question_text": "What is your biometric data (fingerprint, face ID) enrollment status?",
+    "label": "STRICT",
+    "reasoning": "Biometric enrollment status is explicitly cited as a STRICT example in the rubric."
+  },
+  {
+    "question_id": "BEN001",
+    "question_text": "What is your favorite color?",
+    "label": "NONE",
+    "reasoning": "Favorite color is a pure preference with no privacy risk individually or in combination."
+  },
+  {
+    "question_id": "BEN002",
+    "question_text": "What type of music do you enjoy most?",
+    "label": "NONE",
+    "reasoning": "Music genre preference is a lifestyle/taste attribute with essentially no privacy risk."
+  },
+  {
+    "question_id": "BEN003",
+    "question_text": "What is your favorite genre of movies?",
+    "label": "NONE",
+    "reasoning": "Favorite movie genre is a leisure preference with no privacy risk individually or in combination."
+  },
+  {
+    "question_id": "BEN004",
+    "question_text": "Do you prefer reading books or watching TV?",
+    "label": "NONE",
+    "reasoning": "Books vs. TV preference is a behavioral pattern with no privacy risk individually or in combination."
+  },
+  {
+    "question_id": "BEN005",
+    "question_text": "What is your favorite season of the year?",
+    "label": "NONE",
+    "reasoning": "Favorite season is a personal preference with essentially no privacy risk."
+  },
+  {
+    "question_id": "BEN006",
+    "question_text": "What type of cuisine do you enjoy most?",
+    "label": "NONE",
+    "reasoning": "Cuisine preference is a lifestyle/taste attribute with no privacy risk individually or in combination."
+  },
+  {
+    "question_id": "BEN007",
+    "question_text": "Do you prefer coffee or tea?",
+    "label": "NONE",
+    "reasoning": "Coffee vs. tea preference is a trivial lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN008",
+    "question_text": "What is your favorite outdoor activity?",
+    "label": "NONE",
+    "reasoning": "Favorite outdoor activity is a behavioral/lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN009",
+    "question_text": "Do you consider yourself an introvert or extrovert?",
+    "label": "NONE",
+    "reasoning": "Introvert/extrovert self-identification is a personality attribute with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN010",
+    "question_text": "How do you prefer to spend your weekends?",
+    "label": "NONE",
+    "reasoning": "Weekend spending habits are a behavioral pattern with no privacy risk individually or in combination."
+  },
+  {
+    "question_id": "BEN011",
+    "question_text": "What is your favorite holiday?",
+    "label": "NONE",
+    "reasoning": "Favorite holiday is a personal preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN012",
+    "question_text": "Do you prefer mountains or beaches?",
+    "label": "NONE",
+    "reasoning": "Mountains vs. beaches preference is a trivial lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN013",
+    "question_text": "How many hours of TV do you watch per week?",
+    "label": "NONE",
+    "reasoning": "Hours of TV watched per week is a behavioral pattern with no privacy risk individually or in combination."
+  },
+  {
+    "question_id": "BEN014",
+    "question_text": "What streaming services do you subscribe to?",
+    "label": "NONE",
+    "reasoning": "Streaming service subscriptions are general technology/entertainment preferences with no privacy risk."
+  },
+  {
+    "question_id": "BEN015",
+    "question_text": "What is your favorite type of exercise?",
+    "label": "NONE",
+    "reasoning": "Favorite exercise type is a lifestyle/health preference with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN016",
+    "question_text": "How often do you exercise per week?",
+    "label": "NONE",
+    "reasoning": "Exercise frequency is a behavioral pattern with no privacy risk individually or in combination."
+  },
+  {
+    "question_id": "BEN017",
+    "question_text": "Do you prefer cooking at home or eating out?",
+    "label": "NONE",
+    "reasoning": "Cooking at home vs. eating out preference is a lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN018",
+    "question_text": "What is your favorite restaurant type?",
+    "label": "NONE",
+    "reasoning": "Favorite restaurant type is a food/lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN019",
+    "question_text": "How often do you travel for leisure?",
+    "label": "NONE",
+    "reasoning": "Leisure travel frequency is a behavioral pattern with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN020",
+    "question_text": "What is your dream vacation destination?",
+    "label": "NONE",
+    "reasoning": "Dream vacation destination is a personal aspiration/preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN021",
+    "question_text": "Do you prefer domestic or international travel?",
+    "label": "NONE",
+    "reasoning": "Domestic vs. international travel preference is a trivial lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN022",
+    "question_text": "How do you prefer to travel (plane, car, train)?",
+    "label": "NONE",
+    "reasoning": "Preferred travel mode is a general behavioral preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN023",
+    "question_text": "Do you enjoy gardening?",
+    "label": "NONE",
+    "reasoning": "Gardening enjoyment is a hobby/lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN024",
+    "question_text": "Do you have any hobbies? Please describe.",
+    "label": "NONE",
+    "reasoning": "General hobby description is a lifestyle/behavioral attribute with no privacy risk individually or in combination."
+  },
+  {
+    "question_id": "BEN025",
+    "question_text": "Do you play any musical instruments?",
+    "label": "NONE",
+    "reasoning": "Musical instrument playing is a hobby/skills attribute with no privacy risk."
+  },
+  {
+    "question_id": "BEN026",
+    "question_text": "Do you enjoy art or creative activities?",
+    "label": "NONE",
+    "reasoning": "Enjoyment of art and creative activities is a lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN027",
+    "question_text": "How often do you read for pleasure?",
+    "label": "NONE",
+    "reasoning": "Pleasure reading frequency is a behavioral pattern with no privacy risk."
+  },
+  {
+    "question_id": "BEN028",
+    "question_text": "What is your favorite book genre?",
+    "label": "NONE",
+    "reasoning": "Favorite book genre is a personal taste/preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN029",
+    "question_text": "Do you prefer fiction or non-fiction?",
+    "label": "NONE",
+    "reasoning": "Fiction vs. non-fiction preference is a trivial reading preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN030",
+    "question_text": "Do you listen to podcasts regularly?",
+    "label": "NONE",
+    "reasoning": "Podcast listening habits are a media consumption pattern with no privacy risk."
+  },
+  {
+    "question_id": "BEN031",
+    "question_text": "What types of podcasts do you listen to?",
+    "label": "NONE",
+    "reasoning": "Types of podcasts listened to are a content preference with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN032",
+    "question_text": "Do you enjoy board games or video games?",
+    "label": "NONE",
+    "reasoning": "Board games vs. video games preference is a leisure preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN033",
+    "question_text": "Do you prefer solo activities or group activities?",
+    "label": "NONE",
+    "reasoning": "Solo vs. group activity preference is a personality/lifestyle attribute with no privacy risk."
+  },
+  {
+    "question_id": "BEN034",
+    "question_text": "Do you enjoy sports? Which ones?",
+    "label": "NONE",
+    "reasoning": "Sports enjoyment and type are lifestyle/recreational preferences with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN035",
+    "question_text": "Do you follow any professional sports teams?",
+    "label": "NONE",
+    "reasoning": "Following professional sports teams is a leisure/entertainment preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN036",
+    "question_text": "How would you describe your fashion style?",
+    "label": "NONE",
+    "reasoning": "Fashion style self-description is a personal expression attribute with no privacy risk."
+  },
+  {
+    "question_id": "BEN037",
+    "question_text": "How important is keeping up with fashion trends to you?",
+    "label": "NONE",
+    "reasoning": "Importance of fashion trends is a values/lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN038",
+    "question_text": "Do you prefer city life or rural living?",
+    "label": "NONE",
+    "reasoning": "City vs. rural living preference is a lifestyle preference distinct from actual location data."
+  },
+  {
+    "question_id": "BEN039",
+    "question_text": "What type of home environment do you prefer?",
+    "label": "NONE",
+    "reasoning": "Preferred home environment type is a lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN040",
+    "question_text": "How important is being close to nature to you?",
+    "label": "NONE",
+    "reasoning": "Importance of proximity to nature is a values/lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN041",
+    "question_text": "Do you enjoy cooking? How often do you cook at home?",
+    "label": "NONE",
+    "reasoning": "Cooking enjoyment and frequency is a behavioral/lifestyle pattern with no privacy risk."
+  },
+  {
+    "question_id": "BEN042",
+    "question_text": "What is your favorite meal of the day?",
+    "label": "NONE",
+    "reasoning": "Favorite meal of the day is a trivial food preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN043",
+    "question_text": "Do you follow a specific diet by choice (vegetarian, vegan, etc.)?",
+    "label": "NONE",
+    "reasoning": "Chosen dietary preferences (vegetarian, vegan, etc.) are self-reported lifestyle choices with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN044",
+    "question_text": "How important is healthy eating to you?",
+    "label": "NONE",
+    "reasoning": "Importance of healthy eating is a values/lifestyle attitude with no privacy risk."
+  },
+  {
+    "question_id": "BEN045",
+    "question_text": "How many cups of water do you drink daily?",
+    "label": "NONE",
+    "reasoning": "Daily water consumption is a health behavior preference with no individual privacy risk."
+  },
+  {
+    "question_id": "BEN046",
+    "question_text": "How do you typically unwind at the end of the day?",
+    "label": "NONE",
+    "reasoning": "Daily wind-down habits are a behavioral/lifestyle pattern with no privacy risk."
+  },
+  {
+    "question_id": "BEN047",
+    "question_text": "Do you enjoy meditation or mindfulness practices?",
+    "label": "NONE",
+    "reasoning": "Meditation or mindfulness practice is a lifestyle/wellness preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN048",
+    "question_text": "How would you rate your work-life balance?",
+    "label": "NONE",
+    "reasoning": "Self-rated work-life balance is a subjective opinion/attitude with no privacy risk."
+  },
+  {
+    "question_id": "BEN049",
+    "question_text": "How many hours per day do you spend on social media?",
+    "label": "NONE",
+    "reasoning": "Hours per day on social media is a behavioral pattern with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN050",
+    "question_text": "Which social media platforms do you use most?",
+    "label": "NONE",
+    "reasoning": "Social media platforms used are general technology preferences with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN051",
+    "question_text": "How do you feel about social media's impact on society?",
+    "label": "NONE",
+    "reasoning": "Opinion on social media's societal impact is a personal viewpoint with no privacy risk."
+  },
+  {
+    "question_id": "BEN052",
+    "question_text": "Do you prefer texting or phone calls to communicate?",
+    "label": "NONE",
+    "reasoning": "Texting vs. phone call preference is a communication style preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN053",
+    "question_text": "How comfortable are you with new technology?",
+    "label": "NONE",
+    "reasoning": "Comfort level with new technology is a self-reported attitude with no privacy risk."
+  },
+  {
+    "question_id": "BEN054",
+    "question_text": "Do you enjoy trying new things or prefer routines?",
+    "label": "NONE",
+    "reasoning": "Preference for novelty vs. routine is a personality/lifestyle attribute with no privacy risk."
+  },
+  {
+    "question_id": "BEN055",
+    "question_text": "How would you describe your personality?",
+    "label": "NONE",
+    "reasoning": "Personality self-description is a subjective attribute with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN056",
+    "question_text": "What motivates you most in life?",
+    "label": "NONE",
+    "reasoning": "Personal life motivations are a values/opinion attribute with no privacy risk."
+  },
+  {
+    "question_id": "BEN057",
+    "question_text": "What are your most important personal values?",
+    "label": "NONE",
+    "reasoning": "Personal values are a subjective opinion/preference with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN058",
+    "question_text": "How do you define success?",
+    "label": "NONE",
+    "reasoning": "Personal definition of success is a subjective opinion with no privacy risk."
+  },
+  {
+    "question_id": "BEN059",
+    "question_text": "What are your long-term life goals?",
+    "label": "NONE",
+    "reasoning": "Long-term life goals are a personal aspiration/preference with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN060",
+    "question_text": "How important is financial security to you?",
+    "label": "NONE",
+    "reasoning": "Importance of financial security is a values/attitude attribute with no privacy risk."
+  },
+  {
+    "question_id": "BEN061",
+    "question_text": "Do you prefer working independently or in a team?",
+    "label": "NONE",
+    "reasoning": "Preference for independent vs. team work is a personality/work style attribute with no privacy risk."
+  },
+  {
+    "question_id": "BEN062",
+    "question_text": "What type of work environment do you thrive in?",
+    "label": "NONE",
+    "reasoning": "Preferred work environment type is a work style preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN063",
+    "question_text": "Do you enjoy learning new skills?",
+    "label": "NONE",
+    "reasoning": "Enjoyment of learning new skills is a personal attitude with no privacy risk."
+  },
+  {
+    "question_id": "BEN064",
+    "question_text": "What subject areas interest you most?",
+    "label": "NONE",
+    "reasoning": "Subject areas of interest are general intellectual preferences with no privacy risk."
+  },
+  {
+    "question_id": "BEN065",
+    "question_text": "Do you enjoy attending live events (concerts, sports, etc.)?",
+    "label": "NONE",
+    "reasoning": "Enjoyment of live events is a leisure/lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN066",
+    "question_text": "How often do you attend cultural events such as museums or art galleries?",
+    "label": "NONE",
+    "reasoning": "Cultural event attendance frequency is a behavioral pattern with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN067",
+    "question_text": "Do you enjoy volunteering or community service?",
+    "label": "NONE",
+    "reasoning": "Volunteering enjoyment is a values/behavioral preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN068",
+    "question_text": "How important is giving back to your community?",
+    "label": "NONE",
+    "reasoning": "Importance of community giving is a values/attitude with no privacy risk."
+  },
+  {
+    "question_id": "BEN069",
+    "question_text": "Do you have pets? If so, what kind?",
+    "label": "NONE",
+    "reasoning": "Pet ownership and type is a general lifestyle attribute with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN070",
+    "question_text": "Do you prefer cats or dogs?",
+    "label": "NONE",
+    "reasoning": "Cats vs. dogs preference is a trivial lifestyle preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN071",
+    "question_text": "How do you feel about the current state of environmental sustainability?",
+    "label": "NONE",
+    "reasoning": "Opinion on environmental sustainability is a personal viewpoint with no privacy risk."
+  },
+  {
+    "question_id": "BEN072",
+    "question_text": "How do you personally try to reduce your environmental impact?",
+    "label": "NONE",
+    "reasoning": "Personal environmental practices are behavioral/values attributes with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN073",
+    "question_text": "Do you consider yourself environmentally conscious?",
+    "label": "NONE",
+    "reasoning": "Self-described environmental consciousness is a values/attitude attribute with no privacy risk."
+  },
+  {
+    "question_id": "BEN074",
+    "question_text": "How important is sustainability in your purchasing decisions?",
+    "label": "NONE",
+    "reasoning": "Importance of sustainability in purchasing is a values/attitude with no privacy risk."
+  },
+  {
+    "question_id": "BEN075",
+    "question_text": "How often do you shop for new clothing?",
+    "label": "NONE",
+    "reasoning": "Clothing shopping frequency is a behavioral/consumption pattern with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN076",
+    "question_text": "Do you prefer shopping online or in-store?",
+    "label": "NONE",
+    "reasoning": "Online vs. in-store shopping preference is a behavioral preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN077",
+    "question_text": "How do you feel about online shopping compared to five years ago?",
+    "label": "NONE",
+    "reasoning": "Opinion on online shopping trends is a personal viewpoint with no privacy risk."
+  },
+  {
+    "question_id": "BEN078",
+    "question_text": "What factors are most important when making a purchase decision?",
+    "label": "NONE",
+    "reasoning": "Purchase decision factors are general consumer preference attributes with no privacy risk."
+  },
+  {
+    "question_id": "BEN079",
+    "question_text": "How would you describe your spending habits?",
+    "label": "NONE",
+    "reasoning": "Self-described spending habits are a general behavioral pattern with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN080",
+    "question_text": "Do you consider yourself a saver or a spender?",
+    "label": "NONE",
+    "reasoning": "Saver vs. spender self-identification is a general financial attitude with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN081",
+    "question_text": "What types of content do you consume most online?",
+    "label": "NONE",
+    "reasoning": "Types of online content consumed are media preference attributes with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN082",
+    "question_text": "Do you create any online content yourself?",
+    "label": "NONE",
+    "reasoning": "Online content creation is a general behavioral attribute with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN083",
+    "question_text": "What technology would you say you cannot live without?",
+    "label": "NONE",
+    "reasoning": "Most essential technology is a general preference with no privacy risk individually or in combination."
+  },
+  {
+    "question_id": "BEN084",
+    "question_text": "How do you feel about artificial intelligence?",
+    "label": "NONE",
+    "reasoning": "Opinion on artificial intelligence is a personal viewpoint with no privacy risk."
+  },
+  {
+    "question_id": "BEN085",
+    "question_text": "How do you feel about remote work?",
+    "label": "NONE",
+    "reasoning": "Opinion on remote work is a personal viewpoint with no privacy risk."
+  },
+  {
+    "question_id": "BEN086",
+    "question_text": "Do you prefer remote, hybrid, or in-office work?",
+    "label": "NONE",
+    "reasoning": "Remote/hybrid/in-office preference is a work style preference with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN087",
+    "question_text": "How satisfied are you with your current lifestyle overall?",
+    "label": "NONE",
+    "reasoning": "Overall lifestyle satisfaction rating is a subjective wellbeing opinion with no privacy risk."
+  },
+  {
+    "question_id": "BEN088",
+    "question_text": "What one change would most improve your daily life?",
+    "label": "NONE",
+    "reasoning": "Desired daily life improvement is a personal aspiration with no privacy risk individually."
+  },
+  {
+    "question_id": "BEN089",
+    "question_text": "How do you feel about the pace of change in society today?",
+    "label": "NONE",
+    "reasoning": "Opinion on societal pace of change is a personal viewpoint with no privacy risk."
+  },
+  {
+    "question_id": "BEN090",
+    "question_text": "What do you think is the most important issue facing society?",
+    "label": "NONE",
+    "reasoning": "Opinion on the most important societal issue is a personal viewpoint with no privacy risk."
+  },
+  {
+    "question_id": "BEN091",
+    "question_text": "How optimistic are you about the future?",
+    "label": "NONE",
+    "reasoning": "Level of optimism about the future is a subjective attitude with no privacy risk."
+  },
+  {
+    "question_id": "BEN092",
+    "question_text": "What brings you the most joy in everyday life?",
+    "label": "NONE",
+    "reasoning": "Sources of everyday joy are personal preference/values attributes with no privacy risk."
+  },
+  {
+    "question_id": "BEN093",
+    "question_text": "How important is humor to you in your daily life?",
+    "label": "NONE",
+    "reasoning": "Importance of humor in daily life is a personal values/attitude with no privacy risk."
+  },
+  {
+    "question_id": "BEN094",
+    "question_text": "Do you consider yourself a spiritual person?",
+    "label": "NONE",
+    "reasoning": "Self-identification as spiritual is a general personal/philosophical attribute with no significant privacy risk alone."
+  },
+  {
+    "question_id": "BEN095",
+    "question_text": "How do you prefer to handle conflict?",
+    "label": "NONE",
+    "reasoning": "Conflict handling style is a personality/behavioral attribute with no privacy risk."
+  },
+  {
+    "question_id": "BEN096",
+    "question_text": "How do you feel about public speaking?",
+    "label": "NONE",
+    "reasoning": "Feelings about public speaking are a personal attitude/preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN097",
+    "question_text": "What kind of leadership style do you prefer in a workplace?",
+    "label": "NONE",
+    "reasoning": "Preferred leadership style is a work/values preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN098",
+    "question_text": "How do you prefer to receive feedback?",
+    "label": "NONE",
+    "reasoning": "Preferred feedback style is a personal/professional preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN099",
+    "question_text": "What is your preferred learning style?",
+    "label": "NONE",
+    "reasoning": "Preferred learning style is a personal/educational preference with no privacy risk."
+  },
+  {
+    "question_id": "BEN100",
+    "question_text": "What does a perfect day look like to you?",
+    "label": "NONE",
+    "reasoning": "Description of a perfect day is a personal aspiration/preference with no privacy risk."
+  },
+  {
+    "question_id": "MED001",
+    "question_text": "What is your primary medical diagnosis?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Primary medical diagnosis is clinical health information that is sensitive but processed on-premise; not a stigmatized condition per se."
+  },
+  {
+    "question_id": "MED002",
+    "question_text": "Do you have any chronic illnesses? If so, please list them.",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Chronic illness list is clinical health information requiring on-premise pseudonymization as it may include sensitive conditions."
+  },
+  {
+    "question_id": "MED003",
+    "question_text": "Have you ever been diagnosed with cancer? If yes, what type?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Cancer diagnosis history is clinical health information that is sensitive and requires on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED004",
+    "question_text": "Do you have diabetes? What type?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Diabetes diagnosis and type is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED005",
+    "question_text": "Do you have hypertension (high blood pressure)?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Hypertension status is a common, low-stigma condition explicitly cited as a MEDICAL_RELAXED example in the rubric."
+  },
+  {
+    "question_id": "MED006",
+    "question_text": "Have you ever had a heart attack or stroke?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "History of heart attack or stroke is significant clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED007",
+    "question_text": "Do you have a history of cardiovascular disease?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Cardiovascular disease history is clinical health information that is sensitive and requires on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED008",
+    "question_text": "Do you have any autoimmune conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Autoimmune condition diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED009",
+    "question_text": "Have you been diagnosed with any mental health conditions?",
+    "label": "MODERATE",
+    "reasoning": "Mental health condition diagnosis carries stigma risk, elevating it above the medical tier per rule 5."
+  },
+  {
+    "question_id": "MED010",
+    "question_text": "Are you currently receiving psychiatric care?",
+    "label": "MODERATE",
+    "reasoning": "Current psychiatric care status carries stigma risk associated with mental health, elevating it above the medical tier per rule 5."
+  },
+  {
+    "question_id": "MED011",
+    "question_text": "What medications are you currently taking?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Current medications list is clinical health information explicitly cited as a MEDICAL_MODERATE example in the rubric."
+  },
+  {
+    "question_id": "MED012",
+    "question_text": "Do you have any known drug allergies?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Drug allergy information is clinical health information explicitly cited as a MEDICAL_MODERATE example in the rubric."
+  },
+  {
+    "question_id": "MED013",
+    "question_text": "Do you have any food allergies?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Food allergies are common, low-stigma conditions explicitly cited as a MEDICAL_RELAXED example in the rubric."
+  },
+  {
+    "question_id": "MED014",
+    "question_text": "Do you have any environmental allergies?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Environmental allergies are clinical health information explicitly cited as a MEDICAL_MODERATE example in the rubric."
+  },
+  {
+    "question_id": "MED015",
+    "question_text": "What is your blood type?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Blood type is clinical health information explicitly cited as a MEDICAL_MODERATE example in the rubric."
+  },
+  {
+    "question_id": "MED016",
+    "question_text": "Have you ever had surgery? If yes, what kind?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Surgery history is clinical health information explicitly cited as a MEDICAL_MODERATE example in the rubric."
+  },
+  {
+    "question_id": "MED017",
+    "question_text": "Have you ever been hospitalized? How many times?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Hospitalization history and count is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED018",
+    "question_text": "Do you have a family history of heart disease?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Family history of heart disease is a common, low-stigma hereditary risk factor that is lifestyle-adjacent."
+  },
+  {
+    "question_id": "MED019",
+    "question_text": "Do you have a family history of cancer?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Family history of cancer is sensitive hereditary health information that could affect insurability, requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED020",
+    "question_text": "Do you have a family history of diabetes?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Family history of diabetes is a common, low-stigma hereditary risk factor that is lifestyle-adjacent."
+  },
+  {
+    "question_id": "MED021",
+    "question_text": "Do you have a family history of mental illness?",
+    "label": "MODERATE",
+    "reasoning": "Family history of mental illness carries stigma risk, elevating it above the medical tier per rule 5."
+  },
+  {
+    "question_id": "MED022",
+    "question_text": "How many times have you been pregnant?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Pregnancy history count is sensitive reproductive health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED023",
+    "question_text": "Have you experienced any miscarriages?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Miscarriage history is sensitive reproductive health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED024",
+    "question_text": "Do you have any reproductive health conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Reproductive health conditions are clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED025",
+    "question_text": "Are you currently pregnant?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Current pregnancy status is sensitive clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED026",
+    "question_text": "Are you breastfeeding?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Breastfeeding status is sensitive clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED027",
+    "question_text": "Do you smoke or use tobacco products?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Tobacco/smoking use is a lifestyle-adjacent health behavior explicitly cited as a MEDICAL_RELAXED example in the rubric."
+  },
+  {
+    "question_id": "MED028",
+    "question_text": "How many cigarettes do you smoke per day?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Cigarettes per day count is a quantified lifestyle-adjacent health behavior covered by MEDICAL_RELAXED guidance on smoking."
+  },
+  {
+    "question_id": "MED029",
+    "question_text": "Do you consume alcohol? How frequently?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Alcohol consumption frequency is a lifestyle-adjacent health behavior explicitly cited as a MEDICAL_RELAXED example in the rubric."
+  },
+  {
+    "question_id": "MED030",
+    "question_text": "How many alcoholic drinks do you have per week?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Weekly alcoholic drinks count is a quantified lifestyle-adjacent health behavior covered by MEDICAL_RELAXED guidance on alcohol."
+  },
+  {
+    "question_id": "MED031",
+    "question_text": "Have you ever used recreational drugs?",
+    "label": "MODERATE",
+    "reasoning": "Recreational drug use history carries stigma risk associated with substance use, elevating it above the medical tier per rule 5."
+  },
+  {
+    "question_id": "MED032",
+    "question_text": "Are you currently in recovery from substance use?",
+    "label": "MODERATE",
+    "reasoning": "Substance use recovery status carries significant stigma risk, elevating it above the medical tier per rule 5."
+  },
+  {
+    "question_id": "MED033",
+    "question_text": "Do you have a history of eating disorders?",
+    "label": "MODERATE",
+    "reasoning": "Eating disorder history carries significant stigma risk and is explicitly listed as a stigmatized condition in rule 5."
+  },
+  {
+    "question_id": "MED034",
+    "question_text": "Have you ever been treated for depression?",
+    "label": "MODERATE",
+    "reasoning": "Depression treatment history carries stigma risk associated with mental health, elevating it above the medical tier per rule 5."
+  },
+  {
+    "question_id": "MED035",
+    "question_text": "Have you ever been treated for anxiety?",
+    "label": "MODERATE",
+    "reasoning": "Anxiety treatment history carries stigma risk associated with mental health, elevating it above the medical tier per rule 5."
+  },
+  {
+    "question_id": "MED036",
+    "question_text": "Have you ever been hospitalized for a mental health crisis?",
+    "label": "MODERATE",
+    "reasoning": "Mental health crisis hospitalization carries high stigma risk and is explicitly cited in rule 5 as elevating above the medical tier."
+  },
+  {
+    "question_id": "MED037",
+    "question_text": "Have you ever attempted self-harm?",
+    "label": "MODERATE",
+    "reasoning": "Self-harm history carries significant stigma risk and is explicitly cited as a stigmatized condition in rule 5."
+  },
+  {
+    "question_id": "MED038",
+    "question_text": "Are you currently experiencing suicidal thoughts?",
+    "label": "MODERATE",
+    "reasoning": "Current suicidal ideation carries the highest stigma and safety risk and is explicitly cited as a stigmatized condition in rule 5."
+  },
+  {
+    "question_id": "MED039",
+    "question_text": "Do you have a disability? If yes, please describe.",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Disability status and description is sensitive clinical information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED040",
+    "question_text": "Do you use any assistive devices?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Assistive device use is clinical health information explicitly cited as a MEDICAL_MODERATE example in the rubric."
+  },
+  {
+    "question_id": "MED041",
+    "question_text": "Have you been diagnosed with ADHD or ADD?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "ADHD/ADD diagnosis is clinical health information explicitly cited as a MEDICAL_MODERATE example in the rubric."
+  },
+  {
+    "question_id": "MED042",
+    "question_text": "Have you been diagnosed with autism spectrum disorder?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Autism spectrum disorder diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED043",
+    "question_text": "Do you have any neurological conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Neurological condition diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED044",
+    "question_text": "Have you ever had a seizure?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Seizure history is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED045",
+    "question_text": "Do you have a history of migraines?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Migraine history is a common, low-stigma condition explicitly cited as a MEDICAL_RELAXED example in the rubric."
+  },
+  {
+    "question_id": "MED046",
+    "question_text": "Do you have any vision impairments?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Vision impairments are clinical health information explicitly cited as a MEDICAL_MODERATE example in the rubric."
+  },
+  {
+    "question_id": "MED047",
+    "question_text": "Do you have any hearing impairments?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Hearing impairments are clinical health information explicitly cited as a MEDICAL_MODERATE example in the rubric."
+  },
+  {
+    "question_id": "MED048",
+    "question_text": "Do you have any orthopedic conditions or injuries?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Orthopedic conditions or injuries are clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED049",
+    "question_text": "Have you ever had a bone fracture? Where?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Bone fracture history is a common, low-stigma injury type explicitly cited as a MEDICAL_RELAXED example in the rubric."
+  },
+  {
+    "question_id": "MED050",
+    "question_text": "Do you have arthritis?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Arthritis diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED051",
+    "question_text": "Do you have osteoporosis?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Osteoporosis diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED052",
+    "question_text": "Have you been tested for HIV/AIDS?",
+    "label": "MODERATE",
+    "reasoning": "HIV/AIDS testing history carries significant stigma risk and HIV is explicitly cited as a stigmatized condition in rule 5."
+  },
+  {
+    "question_id": "MED053",
+    "question_text": "Do you have any sexually transmitted infections?",
+    "label": "MODERATE",
+    "reasoning": "Sexually transmitted infection status carries significant stigma risk and STIs are explicitly cited as stigmatized in rule 5."
+  },
+  {
+    "question_id": "MED054",
+    "question_text": "Have you been vaccinated for COVID-19?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "COVID-19 vaccination status is explicitly cited as a MEDICAL_RELAXED example in the rubric."
+  },
+  {
+    "question_id": "MED055",
+    "question_text": "Are your routine vaccinations up to date?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Routine vaccination currency is a common public-health attribute that is near-universal and lifestyle-adjacent."
+  },
+  {
+    "question_id": "MED056",
+    "question_text": "Do you have a pacemaker or implanted device?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Pacemaker or implanted device status is specific clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED057",
+    "question_text": "Have you ever received a blood transfusion?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Blood transfusion history is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED058",
+    "question_text": "Have you ever donated an organ or blood?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Organ/blood donation history is a common, low-stigma civic health behavior that is near-universal in eligibility."
+  },
+  {
+    "question_id": "MED059",
+    "question_text": "Are you an organ donor?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Organ donor status is a common, low-stigma personal health/civic decision that is lifestyle-adjacent."
+  },
+  {
+    "question_id": "MED060",
+    "question_text": "Do you have a living will or advance directive?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Living will or advance directive existence is sensitive personal health/legal information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED061",
+    "question_text": "What is your current BMI?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Current BMI is clinical health information explicitly cited as a MEDICAL_MODERATE example in the rubric."
+  },
+  {
+    "question_id": "MED062",
+    "question_text": "Have you undergone any weight loss procedures?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Weight loss procedure history is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED063",
+    "question_text": "Do you follow any medically prescribed diet?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Medically prescribed diet is clinical health information tied to a medical condition requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED064",
+    "question_text": "Do you have celiac disease or gluten intolerance?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Celiac disease or gluten intolerance diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED065",
+    "question_text": "Do you have lactose intolerance?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Lactose intolerance is a common, low-stigma dietary condition that is near-universal and lifestyle-adjacent."
+  },
+  {
+    "question_id": "MED066",
+    "question_text": "Do you have any kidney conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Kidney condition diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED067",
+    "question_text": "Do you have any liver conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Liver condition diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED068",
+    "question_text": "Do you have any thyroid conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Thyroid condition diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED069",
+    "question_text": "Have you been diagnosed with sleep apnea?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Sleep apnea diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED070",
+    "question_text": "Do you have any breathing difficulties or asthma?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Breathing difficulties or asthma diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED071",
+    "question_text": "Have you been diagnosed with COPD?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "COPD diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED072",
+    "question_text": "Do you have any skin conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Skin condition diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED073",
+    "question_text": "Have you been diagnosed with eczema or psoriasis?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Eczema or psoriasis diagnosis is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED074",
+    "question_text": "Do you have any dental or oral health conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Dental or oral health conditions are clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED075",
+    "question_text": "Have you had your wisdom teeth removed?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Wisdom teeth removal is an extremely common, low-stigma procedure that is near-universal and lifestyle-adjacent."
+  },
+  {
+    "question_id": "MED076",
+    "question_text": "Do you wear dentures or have implants?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Dentures or implant status is clinical dental health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED077",
+    "question_text": "Have you ever received chemotherapy or radiation?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Chemotherapy or radiation history is serious clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED078",
+    "question_text": "Are you currently enrolled in any clinical trials?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Clinical trial enrollment is specific clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED079",
+    "question_text": "Do you take any herbal supplements or vitamins regularly?",
+    "label": "MEDICAL_RELAXED",
+    "reasoning": "Herbal supplement and vitamin use is a common, low-stigma lifestyle-adjacent health behavior that is near-universal."
+  },
+  {
+    "question_id": "MED080",
+    "question_text": "Have you ever had an adverse reaction to anesthesia?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Adverse anesthesia reaction history is specific clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED081",
+    "question_text": "How would you rate your overall physical health?",
+    "label": "NONE",
+    "reasoning": "Self-rated overall physical health is a subjective general opinion with no individual privacy risk alone."
+  },
+  {
+    "question_id": "MED082",
+    "question_text": "How would you rate your overall mental health?",
+    "label": "NONE",
+    "reasoning": "Self-rated overall mental health is a general subjective opinion that does not disclose a specific diagnosable condition."
+  },
+  {
+    "question_id": "MED083",
+    "question_text": "Do you have access to regular healthcare?",
+    "label": "NONE",
+    "reasoning": "Healthcare access status is a general circumstantial/access question with no direct health-data privacy risk."
+  },
+  {
+    "question_id": "MED084",
+    "question_text": "How often do you see your primary care physician?",
+    "label": "NONE",
+    "reasoning": "Physician visit frequency is a behavioral pattern with no privacy risk individually."
+  },
+  {
+    "question_id": "MED085",
+    "question_text": "When was your last physical exam?",
+    "label": "NONE",
+    "reasoning": "Last physical exam date is a general healthcare behavior timing with no meaningful individual privacy risk alone."
+  },
+  {
+    "question_id": "MED086",
+    "question_text": "When was your last dental checkup?",
+    "label": "NONE",
+    "reasoning": "Last dental checkup date is a general healthcare behavior timing with no meaningful individual privacy risk alone."
+  },
+  {
+    "question_id": "MED087",
+    "question_text": "When was your last eye exam?",
+    "label": "NONE",
+    "reasoning": "Last eye exam date is a general healthcare behavior timing with no meaningful individual privacy risk alone."
+  },
+  {
+    "question_id": "MED088",
+    "question_text": "Do you have any concerns about your current health?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Current health concerns are self-disclosed clinical information that may reveal sensitive conditions requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED089",
+    "question_text": "What is your primary reason for seeking medical care today?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Primary reason for seeking medical care is clinical information disclosing health status requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED090",
+    "question_text": "Are there any health conditions you are worried about developing?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Health conditions worried about developing are personal health risk perceptions that may reveal sensitive clinical concerns."
+  },
+  {
+    "question_id": "MED091",
+    "question_text": "How do you manage stress in your daily life?",
+    "label": "NONE",
+    "reasoning": "Stress management methods are behavioral/lifestyle patterns with no meaningful privacy risk individually."
+  },
+  {
+    "question_id": "MED092",
+    "question_text": "How many hours of sleep do you get per night?",
+    "label": "NONE",
+    "reasoning": "Hours of sleep per night is a lifestyle/behavioral habit with no privacy risk individually."
+  },
+  {
+    "question_id": "MED093",
+    "question_text": "Do you experience chronic pain? Where and how severe?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Chronic pain existence, location, and severity is clinical health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED094",
+    "question_text": "Do you have any concerns about fertility?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Fertility concerns are sensitive reproductive health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED095",
+    "question_text": "Have you undergone genetic testing?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Genetic testing history is sensitive clinical information with significant insurability implications requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED096",
+    "question_text": "Do you have any known genetic conditions?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Known genetic conditions are sensitive clinical information with significant insurability implications requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED097",
+    "question_text": "Have you been exposed to any occupational health hazards?",
+    "label": "MEDICAL_MODERATE",
+    "reasoning": "Occupational health hazard exposure is clinical/environmental health information requiring on-premise pseudonymization."
+  },
+  {
+    "question_id": "MED098",
+    "question_text": "Do you have any concerns about environmental health risks?",
+    "label": "NONE",
+    "reasoning": "Environmental health risk concerns are general opinion/worry attributes with no direct clinical data privacy risk."
+  },
+  {
+    "question_id": "MED099",
+    "question_text": "Do you have a healthcare proxy or medical power of attorney assigned?",
+    "label": "MODERATE",
+    "reasoning": "Healthcare proxy assignment implies a third-party person's involvement; treated as MODERATE for the relational status itself without the third party's name."
+  },
+  {
+    "question_id": "MED100",
+    "question_text": "Have you discussed your end-of-life wishes with a healthcare provider?",
+    "label": "NONE",
+    "reasoning": "End-of-life wishes discussion status is a general planning behavior with no individual health-data privacy risk alone."
+  }
+]
